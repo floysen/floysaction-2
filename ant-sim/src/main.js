@@ -26,7 +26,7 @@ const cut = buildCutaway(world.scene);
 const globe = buildGlobe();
 const xray = buildXray(actors.F.a);
 const shots = buildShots(actors.F);
-const overlay = buildOverlay(document.getElementById('overlay'));
+const overlay = buildOverlay(document.getElementById('overlay'), { text: new URLSearchParams(location.search).get('text') !== '0' });
 const camera = new THREE.PerspectiveCamera(45, W / H, 0.003, 3000);
 
 // Freeze the segment-5 knee anchor from the pose at t = 40 s (deterministic, order-independent).

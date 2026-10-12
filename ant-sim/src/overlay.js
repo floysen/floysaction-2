@@ -17,7 +17,8 @@ const ITEMS = [
   { id: 'final', t0: 57.3, t1: 60.5, html: "THE SCARIEST GIANT ANT<br>IS THE ONE THAT'S GONE.", cls: 'big', y: 300 },
 ];
 
-export function buildOverlay(root) {
+export function buildOverlay(root, { text = true } = {}) {
+  if (!text) root.classList.add('notext');
   const els = ITEMS.map((it) => {
     const d = document.createElement('div');
     d.className = 'ov ' + it.cls; d.innerHTML = it.html; d.style.top = it.y + 'px';
