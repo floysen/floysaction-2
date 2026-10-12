@@ -6,6 +6,7 @@ import { RenderPass } from 'three/addons/postprocessing/RenderPass.js';
 import { ShaderPass } from 'three/addons/postprocessing/ShaderPass.js';
 import { UnrealBloomPass } from 'three/addons/postprocessing/UnrealBloomPass.js';
 import { OutputPass } from 'three/addons/postprocessing/OutputPass.js';
+import { FXAAShader } from 'three/addons/shaders/FXAAShader.js';
 
 const LensShader = {
   uniforms: { tDiffuse: { value: null }, time: { value: 0 }, vignette: { value: 0.35 }, grain: { value: 0.035 }, fringe: { value: 0.0012 } },
@@ -23,15 +24,18 @@ const LensShader = {
     }`,
 };
 
-export function buildPost(renderer, W, H) {
-  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples: 4 });
+export function buildPost(renderer, W, H, { samples = 4, bloom: useBloom = true, post = true } = {}) {
+  if (!post) return (scene, camera) => renderer.render(scene, camera);
+  const rt = new THREE.WebGLRenderTarget(W, H, { type: THREE.HalfFloatType, samples });
   const composer = new EffectComposer(renderer, rt);
   const renderPass = new RenderPass(new THREE.Scene(), new THREE.PerspectiveCamera());
   const bloom = new UnrealBloomPass(new THREE.Vector2(W / 2, H / 2), 0.25, 0.4, 0.92);
   const lens = new ShaderPass(LensShader);
   composer.addPass(renderPass);
-  composer.addPass(bloom);
+  if (useBloom) composer.addPass(bloom);
   composer.addPass(new OutputPass());
+  // Without MSAA (very slow under software WebGL), FXAA smooths edges after tone mapping.
+  if (!samples) { const fx = new ShaderPass(FXAAShader); fx.uniforms.resolution.value.set(1 / W, 1 / H); composer.addPass(fx); }
   composer.addPass(lens);
   return (scene, camera, t) => {
     renderPass.scene = scene; renderPass.camera = camera;

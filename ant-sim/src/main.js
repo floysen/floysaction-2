@@ -22,7 +22,8 @@ renderer.toneMappingExposure = 1.2;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 
 const world = buildWorld(renderer);
-const post = buildPost(renderer, W, H);
+const q = new URLSearchParams(location.search);
+const post = buildPost(renderer, W, H, { samples: +(q.get('msaa') ?? 0), bloom: q.get('bloom') !== '0', post: q.get('post') !== '0' });
 const actors = buildActors(world.scene);
 const cut = buildCutaway(world.scene);
 const globe = buildGlobe();

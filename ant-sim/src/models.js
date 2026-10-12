@@ -11,7 +11,7 @@ export const std = (color, o = {}) =>
 export const pbr = (pair, o = {}) => std(o.color ?? 0xffffff, { ...o, map: pair.color, bump: pair.bump, bs: o.bs ?? 2 });
 // Ant cuticle: glossy wax layer over a pitted, slightly translucent-looking shell.
 const chit = (color, r) => new THREE.MeshPhysicalMaterial({ color, roughness: r, metalness: 0.05, clearcoat: 0.8, clearcoatRoughness: 0.22,
-  bumpMap: tex().chitin, bumpScale: 0.6, sheen: 0.3, sheenColor: new THREE.Color(0x7a3a20), sheenRoughness: 0.6 });
+  bumpMap: tex().chitin, bumpScale: 0.6});
 
 // A limb segment that extends along local +x from 0 to len, with a child group at its tip.
 function limb(len, r0, r1, mat, radial = 8) {
