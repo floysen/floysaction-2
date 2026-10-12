@@ -1,5 +1,5 @@
 // Deterministic frame capture with headless Chromium (Playwright + SwiftShader WebGL).
-// Usage: node scripts/render.mjs [--workers 3] [--from 0] [--to 1800] [--step 1] [--list 0,45,90] [--out frames] [--notext]
+// Usage: node scripts/render.mjs [--workers 3] [--from 0] [--to 1800] [--step 1] [--list 0,45,90] [--out frames] [--text]
 import { chromium } from 'playwright';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -23,7 +23,7 @@ let done = 0; const t0 = Date.now();
 async function worker(id) {
   const page = await browser.newPage({ viewport: { width: 1080, height: 1920 }, deviceScaleFactor: 1 });
   page.on('pageerror', (e) => console.error(`[w${id}] page error:`, e.message));
-  await page.goto(`http://localhost:${port}/index.html?render=1${process.argv.includes('--notext') ? '&text=0' : ''}`);
+  await page.goto(`http://localhost:${port}/index.html?render=1${process.argv.includes('--text') ? '&text=1' : ''}`);
   await page.waitForFunction(() => window.__ready === true, null, { timeout: 120000 });
   for (let i = id; i < frames.length; i += workers) {
     const f = frames[i];
