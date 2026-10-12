@@ -1,0 +1,20 @@
+{
+  "name": "giant-ants-simulation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Deterministic Three.js animation: What if every ant on Earth became human-sized?",
+  "scripts": {
+    "preview": "node scripts/server.mjs 5173",
+    "render": "node scripts/render.mjs --workers 3",
+    "encode": "bash scripts/encode.sh",
+    "verify": "bash scripts/verify.sh",
+    "build": "npm run render && npm run encode && npm run verify"
+  },
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  }
+}

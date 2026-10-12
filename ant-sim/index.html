@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Giant Ants Simulation</title>
+<style>
+  html,body{margin:0;background:#111;overflow:hidden}
+  #stage{position:absolute;left:0;top:0;width:1080px;height:1920px;transform-origin:0 0}
+  canvas{display:block;width:1080px;height:1920px}
+  #overlay{position:absolute;inset:0;pointer-events:none;font-family:'DejaVu Sans','Liberation Sans',Arial,sans-serif;color:#fff}
+  .ov{position:absolute;left:90px;width:900px;text-align:center;font-weight:800;letter-spacing:1px;
+      text-shadow:0 4px 18px rgba(0,0,0,.65),0 2px 3px rgba(0,0,0,.9)}
+  .big{font-size:84px;line-height:1.08}
+  .mid{font-size:56px;line-height:1.15}
+  .sub{font-size:30px;font-weight:600;opacity:.92;margin-top:10px;letter-spacing:0}
+  .label{font-size:46px;background:rgba(10,30,60,.55);border:2px solid rgba(140,200,255,.8);border-radius:14px;padding:12px 0;left:190px;width:700px}
+  .warn{border-color:rgba(255,150,90,.9);background:rgba(60,20,10,.55)}
+  .word{font-size:62px}
+  .inset{position:absolute;left:390px;top:1290px;width:300px}
+  .inset .sq{position:relative;width:240px;height:240px;margin:0 auto;border:4px solid #fff;border-radius:6px;background:rgba(40,20,10,.55);box-shadow:0 6px 20px rgba(0,0,0,.5)}
+  .inset i{position:absolute;width:11px;height:7px;border-radius:50%;background:#c4562b}
+  .inset .cap{text-align:center;font-size:30px;font-weight:700;margin-top:10px;text-shadow:0 2px 4px #000}
+  .fade{position:absolute;inset:0;background:#fff3e2;opacity:0}
+</style>
+<script type="importmap">
+{ "imports": { "three": "./node_modules/three/build/three.module.js", "three/addons/": "./node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="stage"><canvas id="c" width="1080" height="1920"></canvas><div id="overlay"></div></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
