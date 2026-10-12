@@ -1,0 +1,19 @@
+{
+  "name": "giant-ant-short",
+  "version": "1.0.0",
+  "description": "Three.js 3D YouTube Short: What if ants were human-sized? (Script 2)",
+  "scripts": {
+    "preview": "node scripts/server.mjs",
+    "validate": "node scripts/validate.mjs",
+    "render": "node scripts/validate.mjs && node scripts/render.mjs && bash scripts/inspect.sh",
+    "stills": "node scripts/render.mjs --frames",
+    "inspect": "bash scripts/inspect.sh"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "playwright": "^1.56.1",
+    "three": "^0.170.0"
+  },
+  "type": "module"
+}

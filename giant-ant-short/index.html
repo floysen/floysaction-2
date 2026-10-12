@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Giant Ant Short</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #000; overflow: hidden; }
+  #wrap { position: relative; width: 1080px; height: 1920px; transform-origin: 0 0; }
+  #stage canvas { display: block; }
+  #overlay { position: absolute; inset: 0; pointer-events: none; font-family: 'Inter', 'Inter Display', 'DejaVu Sans', sans-serif; }
+  #vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 45%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.38) 100%); }
+  #caption { position: absolute; left: 50%; top: 250px; transform: translateX(-50%); width: 900px; text-align: center; opacity: 0; }
+  #main { font-weight: 900; font-size: 104px; line-height: 1.0; letter-spacing: -1px; color: #fff;
+          -webkit-text-stroke: 3px rgba(0,0,0,0.85); paint-order: stroke fill;
+          text-shadow: 0 6px 18px rgba(0,0,0,0.65); }
+  #sub { margin-top: 18px; font-weight: 800; font-size: 50px; color: #fff; letter-spacing: 1px;
+         -webkit-text-stroke: 2px rgba(0,0,0,0.8); paint-order: stroke fill; text-shadow: 0 4px 12px rgba(0,0,0,0.6); }
+  .label { position: absolute; transform: translate(-50%, -130%); padding: 10px 22px; border: 4px solid; border-radius: 14px;
+           background: rgba(8,14,20,0.72); font-weight: 900; font-size: 44px; letter-spacing: 1px; white-space: nowrap; }
+  #guide { position: absolute; display: none; height: 12px; align-items: center; overflow: hidden; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.7)); }
+  #guide .dash { flex: 1; height: 8px; background: repeating-linear-gradient(90deg, #ffe066 0 26px, transparent 26px 40px); }
+  #guide .tick { width: 8px; height: 12px; background: #ffe066; }
+  #hud { position: absolute; left: 10px; bottom: 10px; color: #0f0; font: 28px monospace; }
+</style>
+<script type="importmap">
+{ "imports": { "three": "./node_modules/three/build/three.module.js", "three/addons/": "./node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<div id="wrap"><div id="stage"></div><div id="overlay"></div><div id="hud"></div></div>
+<script>
+  // In a normal browser window, scale the 1080x1920 stage to fit (render mode uses an exact 1080x1920 viewport).
+  const fit = () => { const s = Math.min(innerWidth / 1080, innerHeight / 1920); document.getElementById('wrap').style.transform = s < 1 ? `scale(${s})` : ''; };
+  addEventListener('resize', fit); fit();
+</script>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
