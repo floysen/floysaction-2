@@ -3,7 +3,8 @@
 // sidewalk z -11..-13; road/tram z -13..-20; brick block front at z -23.
 import * as THREE from 'three';
 import { rng, lerp, range, smooth, clamp } from './util.js';
-import { std, makeOak, makeBench, makeLamp, makeFountain, makeTram, makeBuilding } from './models.js';
+import { tex, rep, planarUV } from './textures.js';
+import { std, pbr, makeOak, makeBench, makeLamp, makeFountain, makeTram, makeBuilding } from './models.js';
 
 export const CRACK = new THREE.Vector3(0.3, 0.0, 2.2);
 export const FOUNTAIN = new THREE.Vector3(7, 0, -5);
@@ -33,35 +34,67 @@ function ribbon(curve, width, y, n = 300) {
   return g;
 }
 
+// A clump of 7 curved, tapered grass blades (one instance = one tuft).
+function bladeClump() {
+  const R = rng(321), pos = [], idx = [];
+  for (let b = 0; b < 7; b++) {
+    const a = R() * 6.28, lean = 0.2 + R() * 0.5, h = 0.1 + R() * 0.12, w = 0.006 + R() * 0.004;
+    const ox = (R() - 0.5) * 0.05, oz = (R() - 0.5) * 0.05, base = pos.length / 3;
+    for (let s = 0; s <= 3; s++) {
+      const u = s / 3, bend = lean * u * u * h, ww = w * (1 - u * 0.9);
+      const cx = ox + Math.cos(a) * bend, cz = oz + Math.sin(a) * bend, y = h * u;
+      pos.push(cx - Math.sin(a) * ww, y, cz + Math.cos(a) * ww, cx + Math.sin(a) * ww, y, cz - Math.cos(a) * ww);
+      if (s < 3) { const k = base + s * 2; idx.push(k, k + 1, k + 2, k + 1, k + 3, k + 2); }
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3)); g.setIndex(idx); g.computeVertexNormals();
+  return g;
+}
+
 const decal = (geo, mat, y) => { const m = new THREE.Mesh(geo, mat); m.rotation.x = -Math.PI / 2; m.position.y = y; m.receiveShadow = true; return m; };
 
-export function buildWorld() {
+export function buildWorld(renderer) {
   const scene = new THREE.Scene();
   const R = rng(1234);
 
   // Sky dome with a vertical gradient (drawn first, never depth-tested).
   const skyMat = new THREE.ShaderMaterial({
     side: THREE.BackSide, depthTest: false, depthWrite: false, fog: false,
-    uniforms: { top: { value: new THREE.Color() }, horizon: { value: new THREE.Color() }, bottom: { value: new THREE.Color() } },
+    uniforms: { top: { value: new THREE.Color() }, horizon: { value: new THREE.Color() }, bottom: { value: new THREE.Color() }, sunDir: { value: new THREE.Vector3(0, 1, 0) }, sunCol: { value: new THREE.Color(1, 0.8, 0.6) } },
     vertexShader: 'varying vec3 vP; void main(){ vP = normalize(position); gl_Position = projectionMatrix*modelViewMatrix*vec4(position,1.0);}',
-    fragmentShader: 'uniform vec3 top; uniform vec3 horizon; uniform vec3 bottom; varying vec3 vP; void main(){ float h=vP.y; vec3 c = h>0.0 ? mix(horizon, top, pow(clamp(h,0.0,1.0),0.6)) : mix(horizon,bottom,clamp(-h*4.0,0.0,1.0)); gl_FragColor=vec4(c,1.0);}',
+    fragmentShader: 'uniform vec3 top; uniform vec3 horizon; uniform vec3 bottom; uniform vec3 sunDir; uniform vec3 sunCol; varying vec3 vP; void main(){ float h=vP.y; vec3 c = h>0.0 ? mix(horizon, top, pow(clamp(h,0.0,1.0),0.6)) : mix(horizon,bottom,clamp(-h*4.0,0.0,1.0)); float s=max(dot(normalize(vP),normalize(sunDir)),0.0); c += sunCol*(pow(s,900.0)*6.0 + pow(s,40.0)*0.35 + pow(s,6.0)*0.12); gl_FragColor=vec4(c,1.0);}',
   });
   const sky = new THREE.Mesh(new THREE.SphereGeometry(1000, 32, 16), skyMat);
   sky.renderOrder = -10; sky.frustumCulled = false; scene.add(sky);
 
   scene.fog = new THREE.Fog(0xf3c99a, 60, 260);
-  const hemi = new THREE.HemisphereLight(0xbcd3ff, 0x5a4a2a, 0.9); scene.add(hemi);
+  const hemi = new THREE.HemisphereLight(0xbcd3ff, 0x5a4a2a, 0.4); scene.add(hemi);
+
+  // Image-based lighting: prefilter a golden-hour sky (with sun glow and a grass-toned
+  // ground) into an environment map so glossy chitin, glass and water reflect the sky.
+  if (renderer) {
+    const envScene = new THREE.Scene();
+    const envMat = skyMat.clone();
+    envMat.uniforms.top.value.set(0x6f9ccf); envMat.uniforms.horizon.value.set(0xf6c99a); envMat.uniforms.bottom.value.set(0x3d5a2a);
+    envMat.uniforms.sunDir.value.set(-0.92, 0.2, 0.33); envMat.uniforms.sunCol.value.set(0xffc48a);
+    envScene.add(new THREE.Mesh(new THREE.SphereGeometry(10, 32, 16), envMat));
+    const pm = new THREE.PMREMGenerator(renderer);
+    scene.environment = pm.fromScene(envScene, 0.02).texture;
+    scene.environmentIntensity = 0.55;
+    pm.dispose();
+  }
   const sun = new THREE.DirectionalLight(0xffc98a, 3);
   sun.castShadow = true; sun.shadow.mapSize.set(2048, 2048); sun.shadow.bias = -0.0004;
   scene.add(sun, sun.target);
 
   // Ground, lawn and far fields.
-  const lawnMat = std(0x5f8f3a, { r: 0.95 });
+  const lawnMat = pbr(rep(tex().grass, 150, 150), { r: 0.95, bs: 3 });
   const ground = decal(new THREE.PlaneGeometry(600, 600), lawnMat, 0); scene.add(ground);
 
   // Gravel path.
-  const pathMat = std(0xbfae8c, { r: 1 });
-  scene.add(new THREE.Mesh(ribbon(pathCurve, 3.4, 0.012), pathMat));
+  const pathMat = pbr(rep(tex().gravel, 1, 1), { r: 0.95, bs: 4 });
+  scene.add(new THREE.Mesh(planarUV(ribbon(pathCurve, 3.4, 0.012), 1.4), pathMat));
   const edge = new THREE.Mesh(ribbon(pathCurve, 3.7, 0.008), std(0x8d7f66)); scene.add(edge);
   scene.children.slice(-2).forEach((m) => { m.receiveShadow = true; });
 
@@ -92,7 +125,7 @@ export function buildWorld() {
   }
 
   // Sidewalk slabs (instanced), road, markings, tram rails, far sidewalk.
-  const slabMat = std(0xb9b4aa, { r: 0.9 });
+  const slabMat = pbr(tex().concrete, { r: 0.9, bs: 1.5 });
   const slabs = new THREE.InstancedMesh(new THREE.BoxGeometry(1.46, 0.12, 0.96), slabMat, 220);
   let si = 0;
   for (let x = -60; x < 60; x += 1.5) for (const z of [-11.5, -12.5]) {
@@ -108,7 +141,7 @@ export function buildWorld() {
     dynSlabs.push({ pivot, x, z });
   }
   const curb = new THREE.Mesh(new THREE.BoxGeometry(200, 0.18, 0.25), std(0x9a958c)); curb.position.set(0, 0.09, -13.05); scene.add(curb);
-  const road = decal(new THREE.PlaneGeometry(200, 7), std(0x3a3c40, { r: 0.95 }), 0.01); road.position.z = -16.5; scene.add(road);
+  const road = decal(new THREE.PlaneGeometry(200, 7), pbr(rep(tex().asphalt, 60, 2.1), { r: 0.9, bs: 2 }), 0.01); road.position.z = -16.5; scene.add(road);
   for (let x = -90; x < 90; x += 6) { const d = decal(new THREE.PlaneGeometry(2.4, 0.15), std(0xe8e4d8), 0.015); d.position.set(x, 0.015, -14.4); scene.add(d); }
   const railMat = std(0x9aa0a6, { m: 0.8, r: 0.35 });
   for (const z of [-15.8, -17.2]) { const r = new THREE.Mesh(new THREE.BoxGeometry(200, 0.06, 0.08), railMat); r.position.set(0, 0.04, z); scene.add(r); }
@@ -136,9 +169,9 @@ export function buildWorld() {
   const fountain = makeFountain(); fountain.position.copy(FOUNTAIN); scene.add(fountain);
 
   // Grass tufts (instanced, coloured per instance).
-  const grassGeo = new THREE.ConeGeometry(0.03, 0.16, 3); grassGeo.translate(0, 0.08, 0);
-  const grassMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.9 });
-  const NG = 7000, grass = new THREE.InstancedMesh(grassGeo, grassMat, NG);
+  const grassGeo = bladeClump();
+  const grassMat = new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.8, side: THREE.DoubleSide });
+  const NG = 9000, grass = new THREE.InstancedMesh(grassGeo, grassMat, NG);
   const gcols = [0x4f8a30, 0x6a9a3a, 0x3e7428, 0x7aa848].map((c) => new THREE.Color(c));
   let gi = 0;
   while (gi < NG) {
@@ -163,11 +196,11 @@ export function buildWorld() {
     flowers.push({ x: bed[0] + Math.cos(a) * r, z: bed[1] + Math.sin(a) * r * 0.7, h: 0.22 + R() * 0.18, lean: R() * 6.28, w: R() });
     heads.setColorAt(i, fcols[i % 4]);
   }
-  for (const bed of [[-1.8, 4.7], [-4, -2.6]]) { const s = decal(new THREE.CircleGeometry(1.25, 20), std(0x4a3524), 0.006); s.position.set(bed[0], 0.006, bed[1]); s.scale.y = 0.75; scene.add(s); }
+  for (const bed of [[-1.8, 4.7], [-4, -2.6]]) { const s = decal(new THREE.CircleGeometry(1.25, 20), pbr(rep(tex().soil, 1, 1), { r: 1, bs: 3 }), 0.006); s.position.set(bed[0], 0.006, bed[1]); s.scale.y = 0.75; scene.add(s); }
   stems.castShadow = heads.castShadow = true; scene.add(stems, heads);
 
   // Segment 6 assets: dry patches, seeds, aphids.
-  const patchMat = std(0xc2a85a, { r: 1 }), bareMat = std(0x8a6a44, { r: 1 });
+  const patchMat = std(0xc2a85a, { r: 1 }), bareMat = pbr(tex().soil, { r: 1, bs: 3 });
   const patches = [];
   for (let i = 0; i < 40; i++) {
     const x = -16 + R() * 32, z = -9 + R() * 18;
@@ -206,7 +239,8 @@ export function buildWorld() {
     const k = clamp((el - 0.2) / 0.45);
     sun.color.copy(golden.sun).lerp(noon.sun, k);
     sun.intensity = lerp(3.0, 3.4, k);
-    hemi.intensity = lerp(0.85, 1.1, k);
+    hemi.intensity = lerp(0.35, 0.5, k);
+    skyMat.uniforms.sunDir.value.copy(sunDir); skyMat.uniforms.sunCol.value.copy(sun.color);
     skyMat.uniforms.top.value.copy(golden.top).lerp(noon.top, k);
     skyMat.uniforms.horizon.value.copy(golden.hor).lerp(noon.hor, k);
     skyMat.uniforms.bottom.value.set(0x55603a);

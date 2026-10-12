@@ -1,10 +1,17 @@
 // Procedural low-poly models. Every model is built from primitives at runtime.
 import * as THREE from 'three';
-import { mergeGeometries } from 'three/addons/utils/BufferGeometryUtils.js';
+import { mergeGeometries, mergeVertices } from 'three/addons/utils/BufferGeometryUtils.js';
 import { rng } from './util.js';
+import { tex, rep } from './textures.js';
 
 export const std = (color, o = {}) =>
-  new THREE.MeshStandardMaterial({ color, roughness: o.r ?? 0.85, metalness: o.m ?? 0, flatShading: o.flat ?? false });
+  new THREE.MeshStandardMaterial({ color, roughness: o.r ?? 0.85, metalness: o.m ?? 0, flatShading: o.flat ?? false,
+    map: o.map ?? null, bumpMap: o.bump ?? null, bumpScale: o.bs ?? 1 });
+// Textured PBR material from a procedural texture pair.
+export const pbr = (pair, o = {}) => std(o.color ?? 0xffffff, { ...o, map: pair.color, bump: pair.bump, bs: o.bs ?? 2 });
+// Ant cuticle: glossy wax layer over a pitted, slightly translucent-looking shell.
+const chit = (color, r) => new THREE.MeshPhysicalMaterial({ color, roughness: r, metalness: 0.05, clearcoat: 0.8, clearcoatRoughness: 0.22,
+  bumpMap: tex().chitin, bumpScale: 0.6, sheen: 0.3, sheenColor: new THREE.Color(0x7a3a20), sheenRoughness: 0.6 });
 
 // A limb segment that extends along local +x from 0 to len, with a child group at its tip.
 function limb(len, r0, r1, mat, radial = 8) {
@@ -25,12 +32,12 @@ function limb(len, r0, r1, mat, radial = 8) {
 // Unit body length = 1 (head to gaster tip). Scale the root to the target length.
 // Forward is +z. Six legs, two elbowed antennae, mandibles, compound eyes, spiracles.
 export function makeAnt(detail = 1) {
-  const ws = detail ? 18 : 10, hs = detail ? 12 : 7, rs = detail ? 8 : 5;
+  const ws = detail ? 18 : 12, hs = detail ? 12 : 8, rs = detail ? 8 : 5;
   const M = {
-    red: std(0x9c3f1d, { r: 0.35, m: 0.1 }),
-    dark: std(0x3b1a0f, { r: 0.3, m: 0.12 }),
-    leg: std(0x5c2815, { r: 0.4, m: 0.1 }),
-    eye: std(0x0a0a0a, { r: 0.15 }),
+    red: chit(0x8f3417, 0.42),
+    dark: chit(0x2a120a, 0.38),
+    leg: chit(0x4e2010, 0.45),
+    eye: new THREE.MeshPhysicalMaterial({ color: 0x050505, roughness: 0.08, clearcoat: 1 }),
     spir: std(0x120604, { r: 0.6 }),
     muscle: new THREE.MeshStandardMaterial({ color: 0xff7a2a, emissive: 0xff5a10, emissiveIntensity: 0.7, roughness: 0.6 }),
   };
@@ -160,7 +167,8 @@ export function makeAntCrowdGeometry() {
     g.setAttribute('color', new THREE.BufferAttribute(col, 3));
     geos.push(g);
   });
-  const merged = mergeGeometries(geos);
+  // Weld shared vertices so normals are smooth (no faceting), then recompute.
+  const merged = mergeVertices(mergeGeometries(geos), 1e-4);
   merged.computeVertexNormals();
   return merged;
 }
@@ -240,13 +248,27 @@ export function poseDog(d, phase, amt) {
   d.tail.rotation.z = Math.sin(phase * 2) * 0.4;
 }
 
+// Lumpy foliage mass: subdivided icosphere displaced by layered sines (deterministic).
+let CANOPY = null;
+function canopyGeo() {
+  if (CANOPY) return CANOPY;
+  const g = new THREE.IcosahedronGeometry(1, 4), p = g.attributes.position, v = new THREE.Vector3();
+  for (let i = 0; i < p.count; i++) {
+    v.fromBufferAttribute(p, i).normalize();
+    const n = 0.12 * Math.sin(v.x * 7 + v.y * 3) * Math.cos(v.z * 6 - v.y * 4) + 0.06 * Math.sin(v.x * 17 + v.z * 13) + 0.04 * Math.sin(v.y * 29 + v.x * 23);
+    v.multiplyScalar(1 + n); p.setXYZ(i, v.x, v.y, v.z);
+  }
+  g.computeVertexNormals();
+  return (CANOPY = g);
+}
+
 // --------------------------------------------------------------- TREE ----
 // Oak: tapered trunk, branches, clustered faceted canopy. Optional low branch with
 // individual leaves (used for the aphid close-up).
 export function makeOak(seed, { lowBranch = false } = {}) {
   const R = rng(seed);
   const root = new THREE.Group();
-  const bark = std(0x4a3524, { flat: true });
+  const bark = pbr(rep(tex().bark, 1, 2), { color: 0x9a8a7a, bs: 4 });
   const trunk = new THREE.Mesh(new THREE.CylinderGeometry(0.28, 0.5, 4.2, 8), bark);
   trunk.position.y = 2.1; root.add(trunk);
   const canopy = new THREE.Group(); canopy.position.y = 5.4; root.add(canopy);
@@ -256,10 +278,10 @@ export function makeOak(seed, { lowBranch = false } = {}) {
     br.position.set(Math.cos(a) * 0.6, 4.4, Math.sin(a) * 0.6);
     br.rotation.set(Math.sin(a) * 0.6, 0, -Math.cos(a) * 0.6); root.add(br);
   }
-  const greens = [0x3f6e2a, 0x4a7d30, 0x35602a, 0x56893a];
-  const ico = new THREE.IcosahedronGeometry(1, 1);
+  const greens = [0x5f7f4a, 0x6a8c50, 0x55744a, 0x75985a];
+  const ico = canopyGeo();
   for (let i = 0; i < 11; i++) {
-    const m = new THREE.Mesh(ico, std(greens[i % 4], { flat: true }));
+    const m = new THREE.Mesh(ico, pbr(rep(tex().leaf, 3, 3), { color: greens[i % 4], r: 0.75, bs: 6 }));
     const a = R() * Math.PI * 2, r = R() * 2.0;
     m.position.set(Math.cos(a) * r, (R() - 0.3) * 1.6, Math.sin(a) * r);
     m.scale.setScalar(1.3 + R() * 1.0);
@@ -314,10 +336,10 @@ export function makeLamp() {
 
 export function makeFountain() {
   const g = new THREE.Group();
-  const stone = std(0xe4ded2, { r: 0.7 });
+  const stone = pbr(rep(tex().stone, 4, 1), { r: 0.7, bs: 1.5 });
   const pts = [[0, 0], [2.2, 0], [2.3, 0.15], [2.3, 0.55], [2.05, 0.6], [2.0, 0.3], [0, 0.3]].map(([x, y]) => new THREE.Vector2(x, y));
   const basin = new THREE.Mesh(new THREE.LatheGeometry(pts, 32), stone); g.add(basin);
-  const water = new THREE.Mesh(new THREE.CircleGeometry(2.0, 32), new THREE.MeshStandardMaterial({ color: 0x5a9fc0, roughness: 0.1, metalness: 0.2 }));
+  const water = new THREE.Mesh(new THREE.CircleGeometry(2.0, 32), new THREE.MeshPhysicalMaterial({ color: 0x3f7f98, roughness: 0.05, metalness: 0, clearcoat: 1, transmission: 0, ior: 1.33 }));
   water.rotation.x = -Math.PI / 2; water.position.y = 0.45; g.add(water);
   const col = new THREE.Mesh(new THREE.CylinderGeometry(0.22, 0.3, 1.4, 12), stone); col.position.y = 0.9; g.add(col);
   const bowlPts = [[0, 0], [0.9, 0.05], [1.0, 0.25], [0.88, 0.28], [0.2, 0.12], [0, 0.12]].map(([x, y]) => new THREE.Vector2(x, y));
@@ -342,7 +364,7 @@ export function makeFountain() {
 
 export function makeTram() {
   const g = new THREE.Group();
-  const yel = std(0xf2c230, { r: 0.45, m: 0.15 }), dark = std(0x1d2a33, { r: 0.2, m: 0.3 }), grey = std(0x555a60);
+  const yel = new THREE.MeshPhysicalMaterial({ color: 0xe8b520, roughness: 0.35, metalness: 0.1, clearcoat: 0.9, clearcoatRoughness: 0.1 }), dark = std(0x1d2a33, { r: 0.2, m: 0.3 }), grey = std(0x555a60);
   const body = new THREE.Mesh(new THREE.BoxGeometry(14, 2.6, 2.5), yel); body.position.y = 1.7; g.add(body);
   const win = new THREE.Mesh(new THREE.BoxGeometry(13.4, 0.9, 2.54), dark); win.position.y = 2.15; g.add(win);
   const skirt = new THREE.Mesh(new THREE.BoxGeometry(14, 0.35, 2.3), grey); skirt.position.y = 0.38; g.add(skirt);
@@ -358,13 +380,14 @@ export function makeTram() {
 // Brick apartment block with instanced windows.
 export function makeBuilding({ w = 46, h = 16, d = 10, color = 0x9a4a35, seed = 1, floors = 5 } = {}) {
   const g = new THREE.Group();
-  const mass = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), std(color, { r: 0.9 })); mass.position.y = h / 2; g.add(mass);
+  const tint = new THREE.Color(color).lerp(new THREE.Color(0xffffff), 0.45);
+  const mass = new THREE.Mesh(new THREE.BoxGeometry(w, h, d), pbr(rep(tex().brick, w / 2.6, h / 1.3), { color: tint, r: 0.92, bs: 3 })); mass.position.y = h / 2; g.add(mass);
   const cornice = new THREE.Mesh(new THREE.BoxGeometry(w + 0.6, 0.5, d + 0.6), std(0xd8cfc0)); cornice.position.y = h + 0.1; g.add(cornice);
   const base = new THREE.Mesh(new THREE.BoxGeometry(w + 0.2, 1.2, d + 0.2), std(0x6b625a)); base.position.y = 0.6; g.add(base);
   const cols = Math.floor(w / 3.2);
   const n = cols * floors;
   const winGeo = new THREE.BoxGeometry(1.3, 1.7, 0.2);
-  const wins = new THREE.InstancedMesh(winGeo, std(0x2c3a46, { r: 0.15, m: 0.4 }), n);
+  const wins = new THREE.InstancedMesh(winGeo, new THREE.MeshPhysicalMaterial({ color: 0x1d2a35, roughness: 0.05, metalness: 0.1, clearcoat: 1 }), n);
   const sills = new THREE.InstancedMesh(new THREE.BoxGeometry(1.6, 0.15, 0.35), std(0xe2d8c8), n);
   const m = new THREE.Matrix4(); let i = 0;
   for (let f = 0; f < floors; f++) for (let c = 0; c < cols; c++) {

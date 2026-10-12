@@ -8,6 +8,7 @@ import { buildGlobe } from './globe.js';
 import { buildXray } from './xray.js';
 import { buildShots, cameraAt } from './camera.js';
 import { buildOverlay } from './overlay.js';
+import { buildPost } from './post.js';
 
 const W = 1080, H = 1920;
 const canvas = document.getElementById('c');
@@ -17,10 +18,11 @@ renderer.setSize(W, H, false);
 renderer.shadowMap.enabled = true;
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = 1.05;
+renderer.toneMappingExposure = 1.2;
 renderer.outputColorSpace = THREE.SRGBColorSpace;
 
-const world = buildWorld();
+const world = buildWorld(renderer);
+const post = buildPost(renderer, W, H);
 const actors = buildActors(world.scene);
 const cut = buildCutaway(world.scene);
 const globe = buildGlobe();
@@ -40,7 +42,7 @@ export function renderFrame(frameIndex) {
   const cam = cameraAt(shots, t);
   if (cam.globe) {
     globe.update(t);
-    renderer.render(globe.scene, globe.camera);
+    post(globe.scene, globe.camera, t);
     return t;
   }
   actors.update(t);
@@ -52,7 +54,7 @@ export function renderFrame(frameIndex) {
   camera.updateProjectionMatrix();
   camera.lookAt(cam.q);
   world.update(t, camera, cam.q);
-  renderer.render(world.scene, camera);
+  post(world.scene, camera, t);
   return t;
 }
 window.renderFrame = renderFrame;

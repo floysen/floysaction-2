@@ -92,7 +92,7 @@ export function buildActors(scene) {
 
   // ------------------------------------------------------- crowd (instanced)
   const crowdGeo = makeAntCrowdGeometry();
-  const crowdMat = new THREE.MeshStandardMaterial({ vertexColors: true, roughness: 0.38, metalness: 0.1 });
+  const crowdMat = new THREE.MeshPhysicalMaterial({ vertexColors: true, roughness: 0.42, metalness: 0.05, clearcoat: 0.7, clearcoatRoughness: 0.25 });
   const crowdData = [];
   const RC = rng(777);
   const tramStopX = 14.1;
