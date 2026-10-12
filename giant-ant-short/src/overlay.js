@@ -55,7 +55,7 @@ export function createOverlay(root) {
         const x = (v.x * 0.5 + 0.5) * 1080, y = (-v.y * 0.5 + 0.5) * 1920;
         el.style.display = v.z < 1 ? 'block' : 'none';
         el.style.left = `${Math.min(860, Math.max(220, x))}px`;
-        el.style.top = `${Math.min(1450, Math.max(380, y))}px`;
+        el.style.top = `${Math.min(1450, Math.max(560, y))}px`;
         el.style.opacity = l.o ?? 1;
         el.style.borderColor = l.color;
         el.style.color = l.color;

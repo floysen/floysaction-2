@@ -265,7 +265,7 @@ export function createDirector(world) {
     if (t >= 20.6 && t < 21.8) labels.push({ text: 'WEIGHT', pos: new THREE.Vector3(...L(1.9, 1.0, -1.8)), color: '#ffab5c', o: pulse(t, 20.6, 21.8, 0.2) });
     if (t >= 24.4 && t < 26.4) {
       hero.root.updateMatrixWorld(true);
-      labels.push({ text: 'AIR STOPS HERE', pos: hero.body.localToWorld(new THREE.Vector3(-1.5, 1.95, 0.4)), color: '#ff8a7a', o: pulse(t, 24.4, 26.4, 0.2) });
+      labels.push({ text: 'AIR STOPS HERE', pos: hero.body.localToWorld(new THREE.Vector3(-1.5, 1.3, 0.3)), color: '#ff8a7a', o: pulse(t, 24.4, 26.4, 0.2) });
     }
     overlay.setLabels(labels, camera);
   }

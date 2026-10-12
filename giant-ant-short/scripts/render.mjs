@@ -18,7 +18,10 @@ const probe = await openPage(url);
 const { TOTAL_FRAMES, FPS } = await probe.page.evaluate(() => window.TIMING);
 await probe.browser.close();
 
-const list = arg('frames') ? arg('frames').split(',').map(Number) : [...Array(TOTAL_FRAMES).keys()];
+// --range a-b re-renders part of the full frame sequence in place (then re-encodes).
+const range = arg('range')?.split('-').map(Number);
+const list = arg('frames') ? arg('frames').split(',').map(Number)
+  : range ? Array.from({ length: range[1] - range[0] + 1 }, (_, i) => range[0] + i) : [...Array(TOTAL_FRAMES).keys()];
 const outDir = arg('frames') ? 'out/stills' : 'out/frames';
 fs.mkdirSync(outDir, { recursive: true });
 
