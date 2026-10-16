@@ -1,0 +1,8 @@
+node_modules/
+build/
+tools/bin/
+tools/env.sh
+.venv/
+output/*
+!output/.gitkeep
+__pycache__/

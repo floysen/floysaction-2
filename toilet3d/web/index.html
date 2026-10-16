@@ -1,0 +1,21 @@
+<!doctype html><html><head><meta charset="utf-8">
+<style>
+html,body{margin:0;background:#000;overflow:hidden}
+#stage{position:relative}
+#fade{position:absolute;inset:0;background:#fff;opacity:0;pointer-events:none}
+#caption{position:absolute;left:50%;top:27%;transform:translate(-50%,-50%);font-family:'Cairo',sans-serif;font-weight:800;
+ color:#fff;white-space:nowrap;direction:rtl;-webkit-text-stroke:0.11em #161c26;paint-order:stroke fill;
+ text-shadow:0 0.06em 0.18em rgba(0,0,0,.55);opacity:0;pointer-events:none}
+@font-face{font-family:'Cairo';src:url('fonts/Cairo-ExtraBold.ttf');font-weight:800}
+</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/","three/examples/jsm/":"./node_modules/three/examples/jsm/","postprocessing":"./node_modules/postprocessing/build/index.js","n8ao":"./node_modules/n8ao/dist/N8AO.js"}}</script>
+</head><body><div id="stage"><div id="fade"></div><div id="caption"></div></div>
+<script type="module">
+const q = new URLSearchParams(location.search);
+const mod = await import('./scenes/' + (q.get('scene') || 'demo') + '.js');
+const stage = await mod.build({ scale: parseFloat(q.get('scale') || '1'), quality: q.get('quality') || 'full' });
+await document.fonts.load("800 40px Cairo");
+window.renderAt = (t) => { stage.render(t); return true; };
+window.duration = mod.duration;
+window.ready = true;
+</script></body></html>

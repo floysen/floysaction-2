@@ -1,0 +1,12 @@
+{
+  "name": "toilet3d",
+  "private": true,
+  "type": "module",
+  "description": "Realistic 3D cut-away explainer video renderer (three.js)",
+  "dependencies": {
+    "three": "0.186.1",
+    "playwright-core": "1.56.1",
+    "n8ao": "1.10.1",
+    "postprocessing": "6.39.5"
+  }
+}
