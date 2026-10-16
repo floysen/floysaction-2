@@ -1,0 +1,2056 @@
+{
+ "duration": 83.058,
+ "speech_start": 0.05,
+ "speech_end": 82.73,
+ "paragraphs": [
+  {
+   "index": 0,
+   "start": 0.05,
+   "end": 4.44,
+   "text": "لو حفرت حفرة في حوش بيتك وبنيت فوقها غرفة صغيرة، صار عندك دورة مياه!"
+  },
+  {
+   "index": 1,
+   "start": 4.7,
+   "end": 10.64,
+   "text": "بس المشكلة؟ الريحة لا تُطاق، والذباب متجمّع عليها، ويجي يوم وتمتلي الحفرة بالكامل."
+  },
+  {
+   "index": 2,
+   "start": 10.99,
+   "end": 16.96,
+   "text": "عشان كذا، تركّب كرسي حمّام داخل البيت، وتوصّله بأنبوب يصب في شبكة الصرف الصحي تحت الشارع."
+  },
+  {
+   "index": 3,
+   "start": 17.24,
+   "end": 22.95,
+   "text": "لكن الموية داخل الأنبوب ما تتحرك من نفسها، فلازم تصب وراها دلو موية يدفع كل شيء بعيد."
+  },
+  {
+   "index": 4,
+   "start": 23.32,
+   "end": 27.97,
+   "text": "بس فيه مشكلة ثانية... غازات المجاري تقدر ترجع من نفس الأنبوب وتدخل بيتك!"
+  },
+  {
+   "index": 5,
+   "start": 28.22,
+   "end": 36.18,
+   "text": "عشان تمنعها، تثني الأنبوب على شكل حرف S، بحيث تبقى فيه كمية موية تسد الطريق على الغازات. وهذا يسمونه مصيدة الروائح."
+  },
+  {
+   "index": 6,
+   "start": 36.44,
+   "end": 41.98,
+   "text": "لكن الانحناءة هذي تحجز الفضلات بعد، فالحل إنك تنزّل كمية موية كبيرة دفعة وحدة."
+  },
+  {
+   "index": 7,
+   "start": 42.3,
+   "end": 50.08,
+   "text": "الموية تملأ الانحناءة، ولما تندفع من الجهة الثانية، تسحب معها اللي داخل الكرسي وتفضّيه بالكامل. هذي يسمونها ظاهرة السيفون."
+  },
+  {
+   "index": 8,
+   "start": 50.31,
+   "end": 54.87,
+   "text": "وحتى صوت القرقرة اللي تسمعه بنهاية كل سحبة؟ هذا من دخول الهواء بعد ما تسحب الموية."
+  },
+  {
+   "index": 9,
+   "start": 55.2,
+   "end": 62.07,
+   "text": "لكن محد يبي يجلس يشيل دلاء موية كل مرة، عشان كذا تركّب خزان خلف الكرسي، فيه سدادة مطاطية ومقبض يرفعها، وعوّامة تقفل دخول الموية إذا امتلأ الخزان."
+  },
+  {
+   "index": 10,
+   "start": 62.35,
+   "end": 66.78,
+   "text": "بس اندفاع الموية داخل الأنبوب ممكن يسحب الهواء من مصيدة الروائح، ويخلّيها تنشف، وبكذا ترجع الغازات!"
+  },
+  {
+   "index": 11,
+   "start": 66.96,
+   "end": 72.51,
+   "text": "عشان كذا، تمد أنبوب تهوية إضافي يطلع من الصرف إلى فوق السطح، عشان يدخل الهواء ويوازن الضغط."
+  },
+  {
+   "index": 12,
+   "start": 72.68,
+   "end": 77.89,
+   "text": "والأنبوب اللي تشوفه طالع من سطح بيتك؟ مو مدخنة... هذا اللي يخلّي دورة المياه تتنفّس!"
+  },
+  {
+   "index": 13,
+   "start": 78.29,
+   "end": 79.96,
+   "text": "ركّب المقعد والغطاء..."
+  },
+  {
+   "index": 14,
+   "start": 80.28,
+   "end": 82.73,
+   "text": "ومبروك عليك! بنيت دورة مياه بنفسك!"
+  }
+ ],
+ "captions": [
+  {
+   "text": "لو حفرت حفرة في حوش",
+   "start": 0.05,
+   "end": 1.5,
+   "paragraph": 0
+  },
+  {
+   "text": "بيتك وبنيت فوقها غرفة صغيرة،",
+   "start": 1.8,
+   "end": 3.27,
+   "paragraph": 0
+  },
+  {
+   "text": "صار عندك دورة مياه!",
+   "start": 3.52,
+   "end": 4.44,
+   "paragraph": 0
+  },
+  {
+   "text": "بس المشكلة؟",
+   "start": 4.7,
+   "end": 5.35,
+   "paragraph": 1
+  },
+  {
+   "text": "الريحة لا تُطاق،",
+   "start": 5.55,
+   "end": 6.76,
+   "paragraph": 1
+  },
+  {
+   "text": "والذباب متجمّع عليها،",
+   "start": 7.03,
+   "end": 8.4,
+   "paragraph": 1
+  },
+  {
+   "text": "ويجي يوم وتمتلي الحفرة بالكامل.",
+   "start": 8.67,
+   "end": 10.64,
+   "paragraph": 1
+  },
+  {
+   "text": "عشان كذا،",
+   "start": 10.99,
+   "end": 11.52,
+   "paragraph": 2
+  },
+  {
+   "text": "تركّب كرسي حمّام داخل البيت،",
+   "start": 11.76,
+   "end": 13.26,
+   "paragraph": 2
+  },
+  {
+   "text": "وتوصّله بأنبوب يصب في شبكة",
+   "start": 13.75,
+   "end": 15.46,
+   "paragraph": 2
+  },
+  {
+   "text": "الصرف الصحي تحت الشارع.",
+   "start": 15.46,
+   "end": 16.96,
+   "paragraph": 2
+  },
+  {
+   "text": "لكن الموية داخل الأنبوب",
+   "start": 17.24,
+   "end": 18.5,
+   "paragraph": 3
+  },
+  {
+   "text": "ما تتحرك من نفسها،",
+   "start": 18.68,
+   "end": 19.7,
+   "paragraph": 3
+  },
+  {
+   "text": "فلازم تصب وراها دلو موية",
+   "start": 19.99,
+   "end": 21.6,
+   "paragraph": 3
+  },
+  {
+   "text": "يدفع كل شيء بعيد.",
+   "start": 21.77,
+   "end": 22.95,
+   "paragraph": 3
+  },
+  {
+   "text": "بس فيه مشكلة ثانية...",
+   "start": 23.32,
+   "end": 24.16,
+   "paragraph": 4
+  },
+  {
+   "text": "غازات المجاري تقدر ترجع من",
+   "start": 24.53,
+   "end": 26.392,
+   "paragraph": 4
+  },
+  {
+   "text": "نفس الأنبوب وتدخل بيتك!",
+   "start": 26.392,
+   "end": 27.97,
+   "paragraph": 4
+  },
+  {
+   "text": "عشان تمنعها،",
+   "start": 28.22,
+   "end": 28.92,
+   "paragraph": 5
+  },
+  {
+   "text": "تثني الأنبوب على",
+   "start": 29.17,
+   "end": 30.299,
+   "paragraph": 5
+  },
+  {
+   "text": "شكل حرف S،",
+   "start": 30.299,
+   "end": 30.94,
+   "paragraph": 5
+  },
+  {
+   "text": "بحيث تبقى فيه كمية موية",
+   "start": 31.15,
+   "end": 32.61,
+   "paragraph": 5
+  },
+  {
+   "text": "تسد الطريق على الغازات.",
+   "start": 32.76,
+   "end": 33.91,
+   "paragraph": 5
+  },
+  {
+   "text": "وهذا يسمونه مصيدة الروائح.",
+   "start": 34.27,
+   "end": 36.18,
+   "paragraph": 5
+  },
+  {
+   "text": "لكن الانحناءة هذي",
+   "start": 36.44,
+   "end": 37.61,
+   "paragraph": 6
+  },
+  {
+   "text": "تحجز الفضلات بعد،",
+   "start": 37.74,
+   "end": 38.72,
+   "paragraph": 6
+  },
+  {
+   "text": "فالحل إنك تنزّل كمية",
+   "start": 39.1,
+   "end": 40.508,
+   "paragraph": 6
+  },
+  {
+   "text": "موية كبيرة دفعة وحدة.",
+   "start": 40.508,
+   "end": 41.98,
+   "paragraph": 6
+  },
+  {
+   "text": "الموية تملأ الانحناءة،",
+   "start": 42.3,
+   "end": 43.61,
+   "paragraph": 7
+  },
+  {
+   "text": "ولما تندفع من الجهة الثانية،",
+   "start": 43.87,
+   "end": 45.31,
+   "paragraph": 7
+  },
+  {
+   "text": "تسحب معها اللي داخل",
+   "start": 45.53,
+   "end": 46.715,
+   "paragraph": 7
+  },
+  {
+   "text": "الكرسي وتفضّيه بالكامل.",
+   "start": 46.715,
+   "end": 47.98,
+   "paragraph": 7
+  },
+  {
+   "text": "هذي يسمونها ظاهرة السيفون.",
+   "start": 48.33,
+   "end": 50.08,
+   "paragraph": 7
+  },
+  {
+   "text": "وحتى صوت القرقرة اللي",
+   "start": 50.31,
+   "end": 51.454,
+   "paragraph": 8
+  },
+  {
+   "text": "تسمعه بنهاية كل سحبة؟",
+   "start": 51.454,
+   "end": 52.55,
+   "paragraph": 8
+  },
+  {
+   "text": "هذا من دخول الهواء",
+   "start": 52.82,
+   "end": 53.845,
+   "paragraph": 8
+  },
+  {
+   "text": "بعد ما تسحب الموية.",
+   "start": 53.845,
+   "end": 54.87,
+   "paragraph": 8
+  },
+  {
+   "text": "لكن محد يبي يجلس يشيل",
+   "start": 55.2,
+   "end": 56.445,
+   "paragraph": 9
+  },
+  {
+   "text": "دلاء موية كل مرة،",
+   "start": 56.445,
+   "end": 57.41,
+   "paragraph": 9
+  },
+  {
+   "text": "عشان كذا تركّب",
+   "start": 57.74,
+   "end": 58.223,
+   "paragraph": 9
+  },
+  {
+   "text": "خزان خلف الكرسي،",
+   "start": 58.223,
+   "end": 58.768,
+   "paragraph": 9
+  },
+  {
+   "text": "فيه سدادة مطاطية ومقبض يرفعها،",
+   "start": 58.768,
+   "end": 59.78,
+   "paragraph": 9
+  },
+  {
+   "text": "وعوّامة تقفل دخول الموية",
+   "start": 60.02,
+   "end": 61.12,
+   "paragraph": 9
+  },
+  {
+   "text": "إذا امتلأ الخزان.",
+   "start": 61.26,
+   "end": 62.07,
+   "paragraph": 9
+  },
+  {
+   "text": "بس اندفاع الموية داخل",
+   "start": 62.35,
+   "end": 63.244,
+   "paragraph": 10
+  },
+  {
+   "text": "الأنبوب ممكن يسحب الهواء",
+   "start": 63.244,
+   "end": 64.251,
+   "paragraph": 10
+  },
+  {
+   "text": "من مصيدة الروائح،",
+   "start": 64.251,
+   "end": 64.94,
+   "paragraph": 10
+  },
+  {
+   "text": "ويخلّيها تنشف،",
+   "start": 65.18,
+   "end": 65.829,
+   "paragraph": 10
+  },
+  {
+   "text": "وبكذا ترجع الغازات!",
+   "start": 65.829,
+   "end": 66.78,
+   "paragraph": 10
+  },
+  {
+   "text": "عشان كذا،",
+   "start": 66.96,
+   "end": 67.459,
+   "paragraph": 11
+  },
+  {
+   "text": "تمد أنبوب تهوية إضافي يطلع",
+   "start": 67.459,
+   "end": 68.93,
+   "paragraph": 11
+  },
+  {
+   "text": "من الصرف إلى فوق السطح،",
+   "start": 69.17,
+   "end": 70.67,
+   "paragraph": 11
+  },
+  {
+   "text": "عشان يدخل الهواء ويوازن الضغط.",
+   "start": 70.91,
+   "end": 72.51,
+   "paragraph": 11
+  },
+  {
+   "text": "والأنبوب اللي تشوفه طالع",
+   "start": 72.68,
+   "end": 74.14,
+   "paragraph": 12
+  },
+  {
+   "text": "من سطح بيتك؟",
+   "start": 74.25,
+   "end": 75.05,
+   "paragraph": 12
+  },
+  {
+   "text": "مو مدخنة...",
+   "start": 75.15,
+   "end": 75.94,
+   "paragraph": 12
+  },
+  {
+   "text": "هذا اللي يخلّي",
+   "start": 76.22,
+   "end": 77.1,
+   "paragraph": 12
+  },
+  {
+   "text": "دورة المياه تتنفّس!",
+   "start": 77.24,
+   "end": 77.89,
+   "paragraph": 12
+  },
+  {
+   "text": "ركّب المقعد والغطاء...",
+   "start": 78.29,
+   "end": 79.96,
+   "paragraph": 13
+  },
+  {
+   "text": "ومبروك عليك!",
+   "start": 80.28,
+   "end": 80.78,
+   "paragraph": 14
+  },
+  {
+   "text": "بنيت دورة مياه بنفسك!",
+   "start": 81.05,
+   "end": 82.73,
+   "paragraph": 14
+  }
+ ],
+ "words": [
+  {
+   "text": "لو",
+   "start": 0.05,
+   "end": 0.276,
+   "paragraph": 0,
+   "caption": 0
+  },
+  {
+   "text": "حفرت",
+   "start": 0.276,
+   "end": 0.63,
+   "paragraph": 0,
+   "caption": 0
+  },
+  {
+   "text": "حفرة",
+   "start": 0.63,
+   "end": 0.984,
+   "paragraph": 0,
+   "caption": 0
+  },
+  {
+   "text": "في",
+   "start": 0.984,
+   "end": 1.21,
+   "paragraph": 0,
+   "caption": 0
+  },
+  {
+   "text": "حوش",
+   "start": 1.21,
+   "end": 1.5,
+   "paragraph": 0,
+   "caption": 0
+  },
+  {
+   "text": "بيتك",
+   "start": 1.8,
+   "end": 2.065,
+   "paragraph": 0,
+   "caption": 1
+  },
+  {
+   "text": "وبنيت",
+   "start": 2.065,
+   "end": 2.378,
+   "paragraph": 0,
+   "caption": 1
+  },
+  {
+   "text": "فوقها",
+   "start": 2.378,
+   "end": 2.692,
+   "paragraph": 0,
+   "caption": 1
+  },
+  {
+   "text": "غرفة",
+   "start": 2.692,
+   "end": 2.957,
+   "paragraph": 0,
+   "caption": 1
+  },
+  {
+   "text": "صغيرة،",
+   "start": 2.957,
+   "end": 3.27,
+   "paragraph": 0,
+   "caption": 1
+  },
+  {
+   "text": "صار",
+   "start": 3.52,
+   "end": 3.717,
+   "paragraph": 0,
+   "caption": 2
+  },
+  {
+   "text": "عندك",
+   "start": 3.717,
+   "end": 3.958,
+   "paragraph": 0,
+   "caption": 2
+  },
+  {
+   "text": "دورة",
+   "start": 3.958,
+   "end": 4.199,
+   "paragraph": 0,
+   "caption": 2
+  },
+  {
+   "text": "مياه!",
+   "start": 4.199,
+   "end": 4.44,
+   "paragraph": 0,
+   "caption": 2
+  },
+  {
+   "text": "بس",
+   "start": 4.7,
+   "end": 4.89,
+   "paragraph": 1,
+   "caption": 3
+  },
+  {
+   "text": "المشكلة؟",
+   "start": 4.89,
+   "end": 5.35,
+   "paragraph": 1,
+   "caption": 3
+  },
+  {
+   "text": "الريحة",
+   "start": 5.55,
+   "end": 6.1,
+   "paragraph": 1,
+   "caption": 4
+  },
+  {
+   "text": "لا",
+   "start": 6.1,
+   "end": 6.357,
+   "paragraph": 1,
+   "caption": 4
+  },
+  {
+   "text": "تُطاق،",
+   "start": 6.357,
+   "end": 6.76,
+   "paragraph": 1,
+   "caption": 4
+  },
+  {
+   "text": "والذباب",
+   "start": 7.03,
+   "end": 7.572,
+   "paragraph": 1,
+   "caption": 5
+  },
+  {
+   "text": "متجمّع",
+   "start": 7.572,
+   "end": 7.986,
+   "paragraph": 1,
+   "caption": 5
+  },
+  {
+   "text": "عليها،",
+   "start": 7.986,
+   "end": 8.4,
+   "paragraph": 1,
+   "caption": 5
+  },
+  {
+   "text": "ويجي",
+   "start": 8.67,
+   "end": 8.993,
+   "paragraph": 1,
+   "caption": 6
+  },
+  {
+   "text": "يوم",
+   "start": 8.993,
+   "end": 9.258,
+   "paragraph": 1,
+   "caption": 6
+  },
+  {
+   "text": "وتمتلي",
+   "start": 9.258,
+   "end": 9.699,
+   "paragraph": 1,
+   "caption": 6
+  },
+  {
+   "text": "الحفرة",
+   "start": 9.699,
+   "end": 10.14,
+   "paragraph": 1,
+   "caption": 6
+  },
+  {
+   "text": "بالكامل.",
+   "start": 10.14,
+   "end": 10.64,
+   "paragraph": 1,
+   "caption": 6
+  },
+  {
+   "text": "عشان",
+   "start": 10.99,
+   "end": 11.281,
+   "paragraph": 2,
+   "caption": 7
+  },
+  {
+   "text": "كذا،",
+   "start": 11.281,
+   "end": 11.52,
+   "paragraph": 2,
+   "caption": 7
+  },
+  {
+   "text": "تركّب",
+   "start": 11.76,
+   "end": 12.049,
+   "paragraph": 2,
+   "caption": 8
+  },
+  {
+   "text": "كرسي",
+   "start": 12.049,
+   "end": 12.339,
+   "paragraph": 2,
+   "caption": 8
+  },
+  {
+   "text": "حمّام",
+   "start": 12.339,
+   "end": 12.628,
+   "paragraph": 2,
+   "caption": 8
+  },
+  {
+   "text": "داخل",
+   "start": 12.628,
+   "end": 12.918,
+   "paragraph": 2,
+   "caption": 8
+  },
+  {
+   "text": "البيت،",
+   "start": 12.918,
+   "end": 13.26,
+   "paragraph": 2,
+   "caption": 8
+  },
+  {
+   "text": "وتوصّله",
+   "start": 13.75,
+   "end": 14.2,
+   "paragraph": 2,
+   "caption": 9
+  },
+  {
+   "text": "بأنبوب",
+   "start": 14.2,
+   "end": 14.65,
+   "paragraph": 2,
+   "caption": 9
+  },
+  {
+   "text": "يصب",
+   "start": 14.65,
+   "end": 14.92,
+   "paragraph": 2,
+   "caption": 9
+  },
+  {
+   "text": "في",
+   "start": 14.92,
+   "end": 15.13,
+   "paragraph": 2,
+   "caption": 9
+  },
+  {
+   "text": "شبكة",
+   "start": 15.13,
+   "end": 15.46,
+   "paragraph": 2,
+   "caption": 9
+  },
+  {
+   "text": "الصرف",
+   "start": 15.46,
+   "end": 15.85,
+   "paragraph": 2,
+   "caption": 10
+  },
+  {
+   "text": "الصحي",
+   "start": 15.85,
+   "end": 16.24,
+   "paragraph": 2,
+   "caption": 10
+  },
+  {
+   "text": "تحت",
+   "start": 16.24,
+   "end": 16.51,
+   "paragraph": 2,
+   "caption": 10
+  },
+  {
+   "text": "الشارع.",
+   "start": 16.51,
+   "end": 16.96,
+   "paragraph": 2,
+   "caption": 10
+  },
+  {
+   "text": "لكن",
+   "start": 17.24,
+   "end": 17.458,
+   "paragraph": 3,
+   "caption": 11
+  },
+  {
+   "text": "الموية",
+   "start": 17.458,
+   "end": 17.822,
+   "paragraph": 3,
+   "caption": 11
+  },
+  {
+   "text": "داخل",
+   "start": 17.822,
+   "end": 18.088,
+   "paragraph": 3,
+   "caption": 11
+  },
+  {
+   "text": "الأنبوب",
+   "start": 18.088,
+   "end": 18.5,
+   "paragraph": 3,
+   "caption": 11
+  },
+  {
+   "text": "ما",
+   "start": 18.68,
+   "end": 18.858,
+   "paragraph": 3,
+   "caption": 12
+  },
+  {
+   "text": "تتحرك",
+   "start": 18.858,
+   "end": 19.19,
+   "paragraph": 3,
+   "caption": 12
+  },
+  {
+   "text": "من",
+   "start": 19.19,
+   "end": 19.368,
+   "paragraph": 3,
+   "caption": 12
+  },
+  {
+   "text": "نفسها،",
+   "start": 19.368,
+   "end": 19.7,
+   "paragraph": 3,
+   "caption": 12
+  },
+  {
+   "text": "فلازم",
+   "start": 19.99,
+   "end": 20.371,
+   "paragraph": 3,
+   "caption": 13
+  },
+  {
+   "text": "تصب",
+   "start": 20.371,
+   "end": 20.634,
+   "paragraph": 3,
+   "caption": 13
+  },
+  {
+   "text": "وراها",
+   "start": 20.634,
+   "end": 21.015,
+   "paragraph": 3,
+   "caption": 13
+  },
+  {
+   "text": "دلو",
+   "start": 21.015,
+   "end": 21.278,
+   "paragraph": 3,
+   "caption": 13
+  },
+  {
+   "text": "موية",
+   "start": 21.278,
+   "end": 21.6,
+   "paragraph": 3,
+   "caption": 13
+  },
+  {
+   "text": "يدفع",
+   "start": 21.77,
+   "end": 22.112,
+   "paragraph": 3,
+   "caption": 14
+  },
+  {
+   "text": "كل",
+   "start": 22.112,
+   "end": 22.329,
+   "paragraph": 3,
+   "caption": 14
+  },
+  {
+   "text": "شيء",
+   "start": 22.329,
+   "end": 22.608,
+   "paragraph": 3,
+   "caption": 14
+  },
+  {
+   "text": "بعيد.",
+   "start": 22.608,
+   "end": 22.95,
+   "paragraph": 3,
+   "caption": 14
+  },
+  {
+   "text": "بس",
+   "start": 23.32,
+   "end": 23.46,
+   "paragraph": 4,
+   "caption": 15
+  },
+  {
+   "text": "فيه",
+   "start": 23.46,
+   "end": 23.64,
+   "paragraph": 4,
+   "caption": 15
+  },
+  {
+   "text": "مشكلة",
+   "start": 23.64,
+   "end": 23.9,
+   "paragraph": 4,
+   "caption": 15
+  },
+  {
+   "text": "ثانية...",
+   "start": 23.9,
+   "end": 24.16,
+   "paragraph": 4,
+   "caption": 15
+  },
+  {
+   "text": "غازات",
+   "start": 24.53,
+   "end": 24.94,
+   "paragraph": 4,
+   "caption": 16
+  },
+  {
+   "text": "المجاري",
+   "start": 24.94,
+   "end": 25.477,
+   "paragraph": 4,
+   "caption": 16
+  },
+  {
+   "text": "تقدر",
+   "start": 25.477,
+   "end": 25.824,
+   "paragraph": 4,
+   "caption": 16
+  },
+  {
+   "text": "ترجع",
+   "start": 25.824,
+   "end": 26.171,
+   "paragraph": 4,
+   "caption": 16
+  },
+  {
+   "text": "من",
+   "start": 26.171,
+   "end": 26.392,
+   "paragraph": 4,
+   "caption": 16
+  },
+  {
+   "text": "نفس",
+   "start": 26.392,
+   "end": 26.676,
+   "paragraph": 4,
+   "caption": 17
+  },
+  {
+   "text": "الأنبوب",
+   "start": 26.676,
+   "end": 27.213,
+   "paragraph": 4,
+   "caption": 17
+  },
+  {
+   "text": "وتدخل",
+   "start": 27.213,
+   "end": 27.623,
+   "paragraph": 4,
+   "caption": 17
+  },
+  {
+   "text": "بيتك!",
+   "start": 27.623,
+   "end": 27.97,
+   "paragraph": 4,
+   "caption": 17
+  },
+  {
+   "text": "عشان",
+   "start": 28.22,
+   "end": 28.516,
+   "paragraph": 5,
+   "caption": 18
+  },
+  {
+   "text": "تمنعها،",
+   "start": 28.516,
+   "end": 28.92,
+   "paragraph": 5,
+   "caption": 18
+  },
+  {
+   "text": "تثني",
+   "start": 29.17,
+   "end": 29.506,
+   "paragraph": 5,
+   "caption": 19
+  },
+  {
+   "text": "الأنبوب",
+   "start": 29.506,
+   "end": 30.024,
+   "paragraph": 5,
+   "caption": 19
+  },
+  {
+   "text": "على",
+   "start": 30.024,
+   "end": 30.299,
+   "paragraph": 5,
+   "caption": 19
+  },
+  {
+   "text": "شكل",
+   "start": 30.299,
+   "end": 30.574,
+   "paragraph": 5,
+   "caption": 20
+  },
+  {
+   "text": "حرف",
+   "start": 30.574,
+   "end": 30.848,
+   "paragraph": 5,
+   "caption": 20
+  },
+  {
+   "text": "S،",
+   "start": 30.848,
+   "end": 30.94,
+   "paragraph": 5,
+   "caption": 20
+  },
+  {
+   "text": "بحيث",
+   "start": 31.15,
+   "end": 31.453,
+   "paragraph": 5,
+   "caption": 21
+  },
+  {
+   "text": "تبقى",
+   "start": 31.453,
+   "end": 31.756,
+   "paragraph": 5,
+   "caption": 21
+  },
+  {
+   "text": "فيه",
+   "start": 31.756,
+   "end": 32.004,
+   "paragraph": 5,
+   "caption": 21
+  },
+  {
+   "text": "كمية",
+   "start": 32.004,
+   "end": 32.307,
+   "paragraph": 5,
+   "caption": 21
+  },
+  {
+   "text": "موية",
+   "start": 32.307,
+   "end": 32.61,
+   "paragraph": 5,
+   "caption": 21
+  },
+  {
+   "text": "تسد",
+   "start": 32.76,
+   "end": 32.967,
+   "paragraph": 5,
+   "caption": 22
+  },
+  {
+   "text": "الطريق",
+   "start": 32.967,
+   "end": 33.312,
+   "paragraph": 5,
+   "caption": 22
+  },
+  {
+   "text": "على",
+   "start": 33.312,
+   "end": 33.519,
+   "paragraph": 5,
+   "caption": 22
+  },
+  {
+   "text": "الغازات.",
+   "start": 33.519,
+   "end": 33.91,
+   "paragraph": 5,
+   "caption": 22
+  },
+  {
+   "text": "وهذا",
+   "start": 34.27,
+   "end": 34.645,
+   "paragraph": 5,
+   "caption": 23
+  },
+  {
+   "text": "يسمونه",
+   "start": 34.645,
+   "end": 35.157,
+   "paragraph": 5,
+   "caption": 23
+  },
+  {
+   "text": "مصيدة",
+   "start": 35.157,
+   "end": 35.6,
+   "paragraph": 5,
+   "caption": 23
+  },
+  {
+   "text": "الروائح.",
+   "start": 35.6,
+   "end": 36.18,
+   "paragraph": 5,
+   "caption": 23
+  },
+  {
+   "text": "لكن",
+   "start": 36.44,
+   "end": 36.71,
+   "paragraph": 6,
+   "caption": 24
+  },
+  {
+   "text": "الانحناءة",
+   "start": 36.71,
+   "end": 37.34,
+   "paragraph": 6,
+   "caption": 24
+  },
+  {
+   "text": "هذي",
+   "start": 37.34,
+   "end": 37.61,
+   "paragraph": 6,
+   "caption": 24
+  },
+  {
+   "text": "تحجز",
+   "start": 37.74,
+   "end": 38.031,
+   "paragraph": 6,
+   "caption": 25
+  },
+  {
+   "text": "الفضلات",
+   "start": 38.031,
+   "end": 38.482,
+   "paragraph": 6,
+   "caption": 25
+  },
+  {
+   "text": "بعد،",
+   "start": 38.482,
+   "end": 38.72,
+   "paragraph": 6,
+   "caption": 25
+  },
+  {
+   "text": "فالحل",
+   "start": 39.1,
+   "end": 39.516,
+   "paragraph": 6,
+   "caption": 26
+  },
+  {
+   "text": "إنك",
+   "start": 39.516,
+   "end": 39.804,
+   "paragraph": 6,
+   "caption": 26
+  },
+  {
+   "text": "تنزّل",
+   "start": 39.804,
+   "end": 40.156,
+   "paragraph": 6,
+   "caption": 26
+  },
+  {
+   "text": "كمية",
+   "start": 40.156,
+   "end": 40.508,
+   "paragraph": 6,
+   "caption": 26
+  },
+  {
+   "text": "موية",
+   "start": 40.508,
+   "end": 40.86,
+   "paragraph": 6,
+   "caption": 27
+  },
+  {
+   "text": "كبيرة",
+   "start": 40.86,
+   "end": 41.276,
+   "paragraph": 6,
+   "caption": 27
+  },
+  {
+   "text": "دفعة",
+   "start": 41.276,
+   "end": 41.628,
+   "paragraph": 6,
+   "caption": 27
+  },
+  {
+   "text": "وحدة.",
+   "start": 41.628,
+   "end": 41.98,
+   "paragraph": 6,
+   "caption": 27
+  },
+  {
+   "text": "الموية",
+   "start": 42.3,
+   "end": 42.718,
+   "paragraph": 7,
+   "caption": 28
+  },
+  {
+   "text": "تملأ",
+   "start": 42.718,
+   "end": 43.025,
+   "paragraph": 7,
+   "caption": 28
+  },
+  {
+   "text": "الانحناءة،",
+   "start": 43.025,
+   "end": 43.61,
+   "paragraph": 7,
+   "caption": 28
+  },
+  {
+   "text": "ولما",
+   "start": 43.87,
+   "end": 44.13,
+   "paragraph": 7,
+   "caption": 29
+  },
+  {
+   "text": "تندفع",
+   "start": 44.13,
+   "end": 44.437,
+   "paragraph": 7,
+   "caption": 29
+  },
+  {
+   "text": "من",
+   "start": 44.437,
+   "end": 44.602,
+   "paragraph": 7,
+   "caption": 29
+  },
+  {
+   "text": "الجهة",
+   "start": 44.602,
+   "end": 44.909,
+   "paragraph": 7,
+   "caption": 29
+  },
+  {
+   "text": "الثانية،",
+   "start": 44.909,
+   "end": 45.31,
+   "paragraph": 7,
+   "caption": 29
+  },
+  {
+   "text": "تسحب",
+   "start": 45.53,
+   "end": 45.826,
+   "paragraph": 7,
+   "caption": 30
+  },
+  {
+   "text": "معها",
+   "start": 45.826,
+   "end": 46.123,
+   "paragraph": 7,
+   "caption": 30
+  },
+  {
+   "text": "اللي",
+   "start": 46.123,
+   "end": 46.419,
+   "paragraph": 7,
+   "caption": 30
+  },
+  {
+   "text": "داخل",
+   "start": 46.419,
+   "end": 46.715,
+   "paragraph": 7,
+   "caption": 30
+  },
+  {
+   "text": "الكرسي",
+   "start": 46.715,
+   "end": 47.119,
+   "paragraph": 7,
+   "caption": 31
+  },
+  {
+   "text": "وتفضّيه",
+   "start": 47.119,
+   "end": 47.522,
+   "paragraph": 7,
+   "caption": 31
+  },
+  {
+   "text": "بالكامل.",
+   "start": 47.522,
+   "end": 47.98,
+   "paragraph": 7,
+   "caption": 31
+  },
+  {
+   "text": "هذي",
+   "start": 48.33,
+   "end": 48.611,
+   "paragraph": 7,
+   "caption": 32
+  },
+  {
+   "text": "يسمونها",
+   "start": 48.611,
+   "end": 49.142,
+   "paragraph": 7,
+   "caption": 32
+  },
+  {
+   "text": "ظاهرة",
+   "start": 49.142,
+   "end": 49.549,
+   "paragraph": 7,
+   "caption": 32
+  },
+  {
+   "text": "السيفون.",
+   "start": 49.549,
+   "end": 50.08,
+   "paragraph": 7,
+   "caption": 32
+  },
+  {
+   "text": "وحتى",
+   "start": 50.31,
+   "end": 50.572,
+   "paragraph": 8,
+   "caption": 33
+  },
+  {
+   "text": "صوت",
+   "start": 50.572,
+   "end": 50.787,
+   "paragraph": 8,
+   "caption": 33
+  },
+  {
+   "text": "القرقرة",
+   "start": 50.787,
+   "end": 51.192,
+   "paragraph": 8,
+   "caption": 33
+  },
+  {
+   "text": "اللي",
+   "start": 51.192,
+   "end": 51.454,
+   "paragraph": 8,
+   "caption": 33
+  },
+  {
+   "text": "تسمعه",
+   "start": 51.454,
+   "end": 51.764,
+   "paragraph": 8,
+   "caption": 34
+  },
+  {
+   "text": "بنهاية",
+   "start": 51.764,
+   "end": 52.121,
+   "paragraph": 8,
+   "caption": 34
+  },
+  {
+   "text": "كل",
+   "start": 52.121,
+   "end": 52.288,
+   "paragraph": 8,
+   "caption": 34
+  },
+  {
+   "text": "سحبة؟",
+   "start": 52.288,
+   "end": 52.55,
+   "paragraph": 8,
+   "caption": 34
+  },
+  {
+   "text": "هذا",
+   "start": 52.82,
+   "end": 53.04,
+   "paragraph": 8,
+   "caption": 35
+  },
+  {
+   "text": "من",
+   "start": 53.04,
+   "end": 53.21,
+   "paragraph": 8,
+   "caption": 35
+  },
+  {
+   "text": "دخول",
+   "start": 53.21,
+   "end": 53.479,
+   "paragraph": 8,
+   "caption": 35
+  },
+  {
+   "text": "الهواء",
+   "start": 53.479,
+   "end": 53.845,
+   "paragraph": 8,
+   "caption": 35
+  },
+  {
+   "text": "بعد",
+   "start": 53.845,
+   "end": 54.065,
+   "paragraph": 8,
+   "caption": 36
+  },
+  {
+   "text": "ما",
+   "start": 54.065,
+   "end": 54.235,
+   "paragraph": 8,
+   "caption": 36
+  },
+  {
+   "text": "تسحب",
+   "start": 54.235,
+   "end": 54.504,
+   "paragraph": 8,
+   "caption": 36
+  },
+  {
+   "text": "الموية.",
+   "start": 54.504,
+   "end": 54.87,
+   "paragraph": 8,
+   "caption": 36
+  },
+  {
+   "text": "لكن",
+   "start": 55.2,
+   "end": 55.429,
+   "paragraph": 9,
+   "caption": 37
+  },
+  {
+   "text": "محد",
+   "start": 55.429,
+   "end": 55.657,
+   "paragraph": 9,
+   "caption": 37
+  },
+  {
+   "text": "يبي",
+   "start": 55.657,
+   "end": 55.886,
+   "paragraph": 9,
+   "caption": 37
+  },
+  {
+   "text": "يجلس",
+   "start": 55.886,
+   "end": 56.166,
+   "paragraph": 9,
+   "caption": 37
+  },
+  {
+   "text": "يشيل",
+   "start": 56.166,
+   "end": 56.445,
+   "paragraph": 9,
+   "caption": 37
+  },
+  {
+   "text": "دلاء",
+   "start": 56.445,
+   "end": 56.724,
+   "paragraph": 9,
+   "caption": 38
+  },
+  {
+   "text": "موية",
+   "start": 56.724,
+   "end": 57.004,
+   "paragraph": 9,
+   "caption": 38
+  },
+  {
+   "text": "كل",
+   "start": 57.004,
+   "end": 57.181,
+   "paragraph": 9,
+   "caption": 38
+  },
+  {
+   "text": "مرة،",
+   "start": 57.181,
+   "end": 57.41,
+   "paragraph": 9,
+   "caption": 38
+  },
+  {
+   "text": "عشان",
+   "start": 57.74,
+   "end": 57.911,
+   "paragraph": 9,
+   "caption": 39
+  },
+  {
+   "text": "كذا",
+   "start": 57.911,
+   "end": 58.052,
+   "paragraph": 9,
+   "caption": 39
+  },
+  {
+   "text": "تركّب",
+   "start": 58.052,
+   "end": 58.223,
+   "paragraph": 9,
+   "caption": 39
+  },
+  {
+   "text": "خزان",
+   "start": 58.223,
+   "end": 58.394,
+   "paragraph": 9,
+   "caption": 40
+  },
+  {
+   "text": "خلف",
+   "start": 58.394,
+   "end": 58.534,
+   "paragraph": 9,
+   "caption": 40
+  },
+  {
+   "text": "الكرسي،",
+   "start": 58.534,
+   "end": 58.768,
+   "paragraph": 9,
+   "caption": 40
+  },
+  {
+   "text": "فيه",
+   "start": 58.768,
+   "end": 58.908,
+   "paragraph": 9,
+   "caption": 41
+  },
+  {
+   "text": "سدادة",
+   "start": 58.908,
+   "end": 59.111,
+   "paragraph": 9,
+   "caption": 41
+  },
+  {
+   "text": "مطاطية",
+   "start": 59.111,
+   "end": 59.344,
+   "paragraph": 9,
+   "caption": 41
+  },
+  {
+   "text": "ومقبض",
+   "start": 59.344,
+   "end": 59.546,
+   "paragraph": 9,
+   "caption": 41
+  },
+  {
+   "text": "يرفعها،",
+   "start": 59.546,
+   "end": 59.78,
+   "paragraph": 9,
+   "caption": 41
+  },
+  {
+   "text": "وعوّامة",
+   "start": 60.02,
+   "end": 60.337,
+   "paragraph": 9,
+   "caption": 42
+  },
+  {
+   "text": "تقفل",
+   "start": 60.337,
+   "end": 60.57,
+   "paragraph": 9,
+   "caption": 42
+  },
+  {
+   "text": "دخول",
+   "start": 60.57,
+   "end": 60.803,
+   "paragraph": 9,
+   "caption": 42
+  },
+  {
+   "text": "الموية",
+   "start": 60.803,
+   "end": 61.12,
+   "paragraph": 9,
+   "caption": 42
+  },
+  {
+   "text": "إذا",
+   "start": 61.26,
+   "end": 61.457,
+   "paragraph": 9,
+   "caption": 43
+  },
+  {
+   "text": "امتلأ",
+   "start": 61.457,
+   "end": 61.742,
+   "paragraph": 9,
+   "caption": 43
+  },
+  {
+   "text": "الخزان.",
+   "start": 61.742,
+   "end": 62.07,
+   "paragraph": 9,
+   "caption": 43
+  },
+  {
+   "text": "بس",
+   "start": 62.35,
+   "end": 62.48,
+   "paragraph": 10,
+   "caption": 44
+  },
+  {
+   "text": "اندفاع",
+   "start": 62.48,
+   "end": 62.76,
+   "paragraph": 10,
+   "caption": 44
+  },
+  {
+   "text": "الموية",
+   "start": 62.76,
+   "end": 63.039,
+   "paragraph": 10,
+   "caption": 44
+  },
+  {
+   "text": "داخل",
+   "start": 63.039,
+   "end": 63.244,
+   "paragraph": 10,
+   "caption": 44
+  },
+  {
+   "text": "الأنبوب",
+   "start": 63.244,
+   "end": 63.561,
+   "paragraph": 10,
+   "caption": 45
+  },
+  {
+   "text": "ممكن",
+   "start": 63.561,
+   "end": 63.766,
+   "paragraph": 10,
+   "caption": 45
+  },
+  {
+   "text": "يسحب",
+   "start": 63.766,
+   "end": 63.971,
+   "paragraph": 10,
+   "caption": 45
+  },
+  {
+   "text": "الهواء",
+   "start": 63.971,
+   "end": 64.251,
+   "paragraph": 10,
+   "caption": 45
+  },
+  {
+   "text": "من",
+   "start": 64.251,
+   "end": 64.381,
+   "paragraph": 10,
+   "caption": 46
+  },
+  {
+   "text": "مصيدة",
+   "start": 64.381,
+   "end": 64.623,
+   "paragraph": 10,
+   "caption": 46
+  },
+  {
+   "text": "الروائح،",
+   "start": 64.623,
+   "end": 64.94,
+   "paragraph": 10,
+   "caption": 46
+  },
+  {
+   "text": "ويخلّيها",
+   "start": 65.18,
+   "end": 65.574,
+   "paragraph": 10,
+   "caption": 47
+  },
+  {
+   "text": "تنشف،",
+   "start": 65.574,
+   "end": 65.829,
+   "paragraph": 10,
+   "caption": 47
+  },
+  {
+   "text": "وبكذا",
+   "start": 65.829,
+   "end": 66.131,
+   "paragraph": 10,
+   "caption": 48
+  },
+  {
+   "text": "ترجع",
+   "start": 66.131,
+   "end": 66.386,
+   "paragraph": 10,
+   "caption": 48
+  },
+  {
+   "text": "الغازات!",
+   "start": 66.386,
+   "end": 66.78,
+   "paragraph": 10,
+   "caption": 48
+  },
+  {
+   "text": "عشان",
+   "start": 66.96,
+   "end": 67.234,
+   "paragraph": 11,
+   "caption": 49
+  },
+  {
+   "text": "كذا،",
+   "start": 67.234,
+   "end": 67.459,
+   "paragraph": 11,
+   "caption": 49
+  },
+  {
+   "text": "تمد",
+   "start": 67.459,
+   "end": 67.683,
+   "paragraph": 11,
+   "caption": 50
+  },
+  {
+   "text": "أنبوب",
+   "start": 67.683,
+   "end": 68.008,
+   "paragraph": 11,
+   "caption": 50
+  },
+  {
+   "text": "تهوية",
+   "start": 68.008,
+   "end": 68.332,
+   "paragraph": 11,
+   "caption": 50
+  },
+  {
+   "text": "إضافي",
+   "start": 68.332,
+   "end": 68.656,
+   "paragraph": 11,
+   "caption": 50
+  },
+  {
+   "text": "يطلع",
+   "start": 68.656,
+   "end": 68.93,
+   "paragraph": 11,
+   "caption": 50
+  },
+  {
+   "text": "من",
+   "start": 69.17,
+   "end": 69.376,
+   "paragraph": 11,
+   "caption": 51
+  },
+  {
+   "text": "الصرف",
+   "start": 69.376,
+   "end": 69.758,
+   "paragraph": 11,
+   "caption": 51
+  },
+  {
+   "text": "إلى",
+   "start": 69.758,
+   "end": 70.023,
+   "paragraph": 11,
+   "caption": 51
+  },
+  {
+   "text": "فوق",
+   "start": 70.023,
+   "end": 70.288,
+   "paragraph": 11,
+   "caption": 51
+  },
+  {
+   "text": "السطح،",
+   "start": 70.288,
+   "end": 70.67,
+   "paragraph": 11,
+   "caption": 51
+  },
+  {
+   "text": "عشان",
+   "start": 70.91,
+   "end": 71.181,
+   "paragraph": 11,
+   "caption": 52
+  },
+  {
+   "text": "يدخل",
+   "start": 71.181,
+   "end": 71.452,
+   "paragraph": 11,
+   "caption": 52
+  },
+  {
+   "text": "الهواء",
+   "start": 71.452,
+   "end": 71.821,
+   "paragraph": 11,
+   "caption": 52
+  },
+  {
+   "text": "ويوازن",
+   "start": 71.821,
+   "end": 72.19,
+   "paragraph": 11,
+   "caption": 52
+  },
+  {
+   "text": "الضغط.",
+   "start": 72.19,
+   "end": 72.51,
+   "paragraph": 11,
+   "caption": 52
+  },
+  {
+   "text": "والأنبوب",
+   "start": 72.68,
+   "end": 73.194,
+   "paragraph": 12,
+   "caption": 53
+  },
+  {
+   "text": "اللي",
+   "start": 73.194,
+   "end": 73.491,
+   "paragraph": 12,
+   "caption": 53
+  },
+  {
+   "text": "تشوفه",
+   "start": 73.491,
+   "end": 73.843,
+   "paragraph": 12,
+   "caption": 53
+  },
+  {
+   "text": "طالع",
+   "start": 73.843,
+   "end": 74.14,
+   "paragraph": 12,
+   "caption": 53
+  },
+  {
+   "text": "من",
+   "start": 74.25,
+   "end": 74.457,
+   "paragraph": 12,
+   "caption": 54
+  },
+  {
+   "text": "سطح",
+   "start": 74.457,
+   "end": 74.724,
+   "paragraph": 12,
+   "caption": 54
+  },
+  {
+   "text": "بيتك؟",
+   "start": 74.724,
+   "end": 75.05,
+   "paragraph": 12,
+   "caption": 54
+  },
+  {
+   "text": "مو",
+   "start": 75.15,
+   "end": 75.427,
+   "paragraph": 12,
+   "caption": 55
+  },
+  {
+   "text": "مدخنة...",
+   "start": 75.427,
+   "end": 75.94,
+   "paragraph": 12,
+   "caption": 55
+  },
+  {
+   "text": "هذا",
+   "start": 76.22,
+   "end": 76.475,
+   "paragraph": 12,
+   "caption": 56
+  },
+  {
+   "text": "اللي",
+   "start": 76.475,
+   "end": 76.788,
+   "paragraph": 12,
+   "caption": 56
+  },
+  {
+   "text": "يخلّي",
+   "start": 76.788,
+   "end": 77.1,
+   "paragraph": 12,
+   "caption": 56
+  },
+  {
+   "text": "دورة",
+   "start": 77.24,
+   "end": 77.423,
+   "paragraph": 12,
+   "caption": 57
+  },
+  {
+   "text": "المياه",
+   "start": 77.423,
+   "end": 77.673,
+   "paragraph": 12,
+   "caption": 57
+  },
+  {
+   "text": "تتنفّس!",
+   "start": 77.673,
+   "end": 77.89,
+   "paragraph": 12,
+   "caption": 57
+  },
+  {
+   "text": "ركّب",
+   "start": 78.29,
+   "end": 78.657,
+   "paragraph": 13,
+   "caption": 58
+  },
+  {
+   "text": "المقعد",
+   "start": 78.657,
+   "end": 79.268,
+   "paragraph": 13,
+   "caption": 58
+  },
+  {
+   "text": "والغطاء...",
+   "start": 79.268,
+   "end": 79.96,
+   "paragraph": 13,
+   "caption": 58
+  },
+  {
+   "text": "ومبروك",
+   "start": 80.28,
+   "end": 80.568,
+   "paragraph": 14,
+   "caption": 59
+  },
+  {
+   "text": "عليك!",
+   "start": 80.568,
+   "end": 80.78,
+   "paragraph": 14,
+   "caption": 59
+  },
+  {
+   "text": "بنيت",
+   "start": 81.05,
+   "end": 81.452,
+   "paragraph": 14,
+   "caption": 60
+  },
+  {
+   "text": "دورة",
+   "start": 81.452,
+   "end": 81.853,
+   "paragraph": 14,
+   "caption": 60
+  },
+  {
+   "text": "مياه",
+   "start": 81.853,
+   "end": 82.255,
+   "paragraph": 14,
+   "caption": 60
+  },
+  {
+   "text": "بنفسك!",
+   "start": 82.255,
+   "end": 82.73,
+   "paragraph": 14,
+   "caption": 60
+  }
+ ]
+}

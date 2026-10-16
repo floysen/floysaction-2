@@ -33,6 +33,8 @@ On the first run, `install.sh` sets up everything inside the folder, one time on
 | `bash render.sh` | Full quality 1080×1920 → `output/toilet_final.mp4` |
 | `bash render.sh --preview` | Half resolution, about 4× faster → `output/toilet_preview.mp4` |
 | `bash render.sh --workers 2` | Use fewer CPU cores (default: all but one) |
+| `bash render.sh --realign` | Re-run the speech-recognition word timing |
+| `bash render.sh --no-align` | Skip the word timing step |
 | `bash render.sh --clean` | Delete the rendered pieces and render again from scratch |
 
 **Stopping and resuming:** press **Ctrl+C** at any time. Run the same command again and it continues;
@@ -61,6 +63,11 @@ The final checks are: H.264, 1080×1920, 30 fps, yuv420p, AAC 48 kHz, duration a
 * **Sets:** the yard with the outhouse; the house cut-away (bathroom, toilet in section, drain, street and sewer main,
   vent stack); and the rooftop. Depth comes from lit 3D boxes, soft contact shadows, corner shading, background haze,
   glossy porcelain and a light vignette.
+* **Exact word timing:** on the first run, `render.sh` installs `faster-whisper` and runs a Whisper speech model
+  (`small`, about 480 MB, downloaded once) on your voiceover with `scripts/word_align.py`. It finds the real moment each
+  word is spoken and matches the words to your script, so the captions and the on-screen events line up with the voice.
+  It takes about 1–3 minutes, only once. `bash render.sh --realign` re-runs it. For even better accuracy, set
+  `"align_model": "medium"` in `project-config.json`. If it can't run (no internet), the earlier pause-based timing is used.
 * **Captions:** `assets/captions/w_*.png` holds one image per spoken word. They're shaped with HarfBuzz, so the Arabic letters
   join correctly and read right-to-left. They're pre-made, so your PC needs no special Arabic text support.
   `subtitles/captions_ar.srt` has plain phrase subtitles if you need them for upload.
