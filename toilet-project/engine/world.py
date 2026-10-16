@@ -722,7 +722,7 @@ def draw_toilet(ctx, t, seat=0.0, lid=0.0, tank=0.0):
     ox, oy = TP(0, 0)
     ctx.save()
     ctx.translate(ox, oy)
-    ctx.scale(max(k, 1e-4), max(k, 1e-4))
+    ctx.scale(max(k, 0.02), max(k, 0.02))
     ctx.translate(-ox, -oy)
     # contact shadow on the floor
     a, b = TP(0.28, 0), TP(0.75, 0)
@@ -980,7 +980,7 @@ def draw_gas(ctx, t):
             kx = pop(t, E["block"], 0.3) * a
             ctx.save()
             ctx.translate(bp[0] + 50, bp[1] - 40)
-            ctx.scale(max(kx, 1e-4), max(kx, 1e-4))
+            ctx.scale(max(kx, 0.02), max(kx, 0.02))
             for ang in (math.pi / 4, -math.pi / 4):
                 ctx.save()
                 ctx.rotate(ang)
@@ -1066,7 +1066,7 @@ def draw_vent(ctx, t):
         k = pop(t, E["balance"], 0.35)
         ctx.save()
         ctx.translate(c[0] + 0.55 * CH.scale_at(0), c[1] - 0.25 * CH.scale_at(0))
-        ctx.scale(max(k, 1e-4), max(k, 1e-4))
+        ctx.scale(max(k, 0.02), max(k, 0.02))
         ctx.arc(0, 0, 30, 0, 2 * math.pi)
         set_src(ctx, hexc("#3cbf5a"))
         ctx.fill()
@@ -1108,18 +1108,20 @@ def draw_house(ctx, t):
     # a pile of buckets for "nobody wants to carry buckets every time"
     if E["lazy"] - 0.1 < t < E["tank"]:
         k = pop(t, E["lazy"], 0.4) * (1 - smooth(t, E["tank"] - 0.4, E["tank"]))
+        if k < 0.03:
+            return
         sc = CH.scale_at(0)
         for i, (du, dv) in enumerate(((1.25, 0.12), (1.55, 0.12), (1.4, 0.42))):
             bx, by = TP(du, dv)
             ctx.save()
             ctx.translate(bx, by)
-            ctx.scale(max(k, 1e-4), max(k, 1e-4))
+            ctx.scale(max(k, 0.02), max(k, 0.02))
             bucket(ctx, 0, 0, 0.3 * sc, 0.0)
             ctx.restore()
         cx, cy = TP(1.4, 0.75)
         ctx.save()
         ctx.translate(cx + 40, cy - 10)
-        ctx.scale(max(k * 0.8, 1e-4), max(k * 0.8, 1e-4))
+        ctx.scale(max(k * 0.8, 0.02), max(k * 0.8, 0.02))
         for ang in (math.pi / 4, -math.pi / 4):
             ctx.save()
             ctx.rotate(ang)
@@ -1163,7 +1165,7 @@ def draw_rooftop(ctx, t):
         cx, cy = W * 0.24, 820
         ctx.save()
         ctx.translate(cx, cy)
-        ctx.scale(max(k, 1e-4), max(k, 1e-4))
+        ctx.scale(max(k, 0.02), max(k, 0.02))
         rounded_rect(ctx, -70, -130, 140, 220, 8)
         ctx.set_source(lgrad(-70, 0, 70, 0, [(0, hexc("#8a3a24")), (0.5, hexc("#c25a3a")), (1, hexc("#7a3220"))]))
         ctx.fill()
@@ -1178,7 +1180,7 @@ def draw_rooftop(ctx, t):
             ctx.set_source_rgba(0.6, 0.6, 0.62, 0.55)
             ctx.fill()
         kx = pop(t, E["chimney"] + 0.3, 0.3)
-        ctx.scale(max(kx, 1e-4), max(kx, 1e-4))
+        ctx.scale(max(kx, 0.02), max(kx, 0.02))
         for ang in (math.pi / 4, -math.pi / 4):
             ctx.save()
             ctx.rotate(ang)
@@ -1200,7 +1202,7 @@ def draw_rooftop(ctx, t):
         k = pop(t, E["see"] + 0.3, 0.35)
         ctx.save()
         ctx.translate(top[0] + 170, arrow_y)
-        ctx.scale(max(k, 1e-4), max(k, 1e-4))
+        ctx.scale(max(k, 0.02), max(k, 0.02))
         arrow(ctx, 0, 0, 120, 44, math.pi * 0.85, (1, 0.85, 0.25, 1))
         ctx.restore()
 
@@ -1219,7 +1221,7 @@ def draw_confetti(ctx, t, t0, dur=2.6, n=90, seed=1):
         ctx.save()
         ctx.translate(x, y)
         ctx.rotate(rnd.uniform(0, 6) + age * rnd.uniform(-8, 8))
-        ctx.scale(1, abs(math.sin(age * rnd.uniform(6, 12) + i)))
+        ctx.scale(1, max(0.05, abs(math.sin(age * rnd.uniform(6, 12) + i))))
         ctx.rectangle(-9, -5, 18, 10)
         set_src(ctx, alpha(cols[i % len(cols)], a))
         ctx.fill()

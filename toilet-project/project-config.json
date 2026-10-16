@@ -31,7 +31,7 @@
       38
     ],
     "center_y_ratio": 0.27,
-    "enabled": false
+    "enabled": true
   },
   "audio": {
     "voice_gain_db": 0.0,
