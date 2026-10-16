@@ -1,0 +1,76 @@
+{
+  "title": "How a Hole in Your Yard Becomes a Swimming Pool",
+  "voiceover": "assets/audio/voiceover.mp3",
+  "script": "data/script_ar.txt",
+  "font": "assets/fonts/Cairo-ExtraBold.ttf",
+  "output_file": "output/pool_final.mp4",
+  "fps": 30,
+  "tail_seconds": 1.2,
+  "background_music": false,
+  "quality": {
+    "full": {
+      "resolution": [
+        1080,
+        1920
+      ],
+      "engine": "EEVEE",
+      "samples": 64,
+      "crf": 17
+    },
+    "cinematic": {
+      "resolution": [
+        1080,
+        1920
+      ],
+      "engine": "CYCLES",
+      "samples": 128,
+      "denoise": true,
+      "crf": 16
+    },
+    "medium": {
+      "resolution": [
+        1080,
+        1920
+      ],
+      "engine": "EEVEE",
+      "samples": 24,
+      "crf": 19
+    },
+    "preview": {
+      "resolution": [
+        540,
+        960
+      ],
+      "engine": "EEVEE",
+      "samples": 8,
+      "crf": 23,
+      "frame_step": 2
+    }
+  },
+  "captions": {
+    "font_size": 74,
+    "bottom_margin_ratio": 0.2,
+    "max_width_ratio": 0.84,
+    "text_color": [
+      255,
+      255,
+      255
+    ],
+    "highlight_color": [
+      255,
+      214,
+      64
+    ],
+    "box_color": [
+      10,
+      30,
+      45,
+      170
+    ]
+  },
+  "audio": {
+    "voice_gain_db": 0.0,
+    "sfx_gain_db": -9.0,
+    "loudness_target_lufs": -14.0
+  }
+}
