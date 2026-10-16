@@ -68,7 +68,9 @@ The final checks are: H.264, 1080×1920, 30 fps, yuv420p, AAC 48 kHz, duration a
   word is spoken and matches the words to your script, so the captions and the on-screen events line up with the voice.
   It takes about 1–3 minutes, only once. `bash render.sh --realign` re-runs it. For even better accuracy, set
   `"align_model": "medium"` in `project-config.json`. If it can't run (no internet), the earlier pause-based timing is used.
-* **Captions:** `assets/captions/w_*.png` holds one image per spoken word. They're shaped with HarfBuzz, so the Arabic letters
+* **Captions are turned off** (`"captions": {"enabled": false}` in `project-config.json`), so you can add your own.
+  `subtitles/captions_ar.srt` has the phrase timing if it helps. Set `enabled` to `true` to bring the built-in captions back.
+* **Built-in captions (when enabled):** `assets/captions/w_*.png` holds one image per spoken word. They're shaped with HarfBuzz, so the Arabic letters
   join correctly and read right-to-left. They're pre-made, so your PC needs no special Arabic text support.
   `subtitles/captions_ar.srt` has plain phrase subtitles if you need them for upload.
 * **Sound:** 31 sound effects synthesised by code (`assets/sound-effects/`) are mixed under your voice.

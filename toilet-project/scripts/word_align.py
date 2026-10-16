@@ -175,7 +175,8 @@ def main():
         p["start"], p["end"] = ws[0]["start"], ws[-1]["end"]
     tl["alignment"] = f"whisper-{a.model}: {matched}/{len(words)} words matched exactly"
     json.dump(tl, open(TLP, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    write_caption_timing(tl)
+    if CFG["captions"].get("enabled", True):
+        write_caption_timing(tl)
     print(f"[align] {matched}/{len(words)} words timed from the audio, the rest placed between them -> data/timeline.json", flush=True)
 
 

@@ -94,6 +94,8 @@ def captions():
 
 
 def draw_caption(ctx, t):
+    if not SP.CFG["captions"].get("enabled", True):
+        return
     meta, items = captions()
     for st, en, surf in items:
         if st <= t < en:
