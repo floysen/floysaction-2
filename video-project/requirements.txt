@@ -1,2 +1,4 @@
 numpy>=1.24
-pillow>=10.0   # needs libraqm for Arabic shaping (make_captions.py checks and stops if missing)
+pycairo>=1.23
+# only needed to regenerate captions (not for rendering):
+# pillow>=10.0  (with libraqm)

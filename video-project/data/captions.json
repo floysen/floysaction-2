@@ -1,983 +1,1175 @@
 {
- "width": 1080,
- "height": 1920,
- "caption_height": 440,
- "bottom_margin_ratio": 0.2,
+ "center_y_ratio": 0.27,
  "entries": [
   {
    "start": 0.05,
    "end": 0.263,
-   "file": "assets/captions/cap_000_00.png"
+   "text": "لو",
+   "file": "assets/captions/w_000.png"
   },
   {
    "start": 0.263,
    "end": 0.596,
-   "file": "assets/captions/cap_000_01.png"
+   "text": "حفرت",
+   "file": "assets/captions/w_001.png"
   },
   {
    "start": 0.596,
    "end": 0.93,
-   "file": "assets/captions/cap_000_02.png"
+   "text": "حفرة",
+   "file": "assets/captions/w_002.png"
   },
   {
    "start": 0.93,
    "end": 1.143,
-   "file": "assets/captions/cap_000_03.png"
+   "text": "في",
+   "file": "assets/captions/w_003.png"
   },
   {
    "start": 1.143,
    "end": 1.416,
-   "file": "assets/captions/cap_001_00.png"
+   "text": "حوش",
+   "file": "assets/captions/w_004.png"
   },
   {
    "start": 1.416,
    "end": 1.75,
-   "file": "assets/captions/cap_001_01.png"
+   "text": "بيتك",
+   "file": "assets/captions/w_005.png"
   },
   {
    "start": 1.75,
    "end": 2.266,
-   "file": "assets/captions/cap_001_02.png"
+   "text": "وعبيتها",
+   "file": "assets/captions/w_006.png"
   },
   {
    "start": 2.266,
    "end": 2.83,
-   "file": "assets/captions/cap_001_03.png"
+   "text": "موية،",
+   "file": "assets/captions/w_007.png"
   },
   {
    "start": 2.83,
    "end": 3.48,
-   "file": "assets/captions/cap_002_00.png"
+   "text": "مبروك،",
+   "file": "assets/captions/w_008.png"
   },
   {
    "start": 3.48,
    "end": 3.712,
-   "file": "assets/captions/cap_003_00.png"
+   "text": "صار",
+   "file": "assets/captions/w_009.png"
   },
   {
    "start": 3.712,
    "end": 3.996,
-   "file": "assets/captions/cap_003_01.png"
+   "text": "عندك",
+   "file": "assets/captions/w_010.png"
   },
   {
    "start": 3.996,
    "end": 4.53,
-   "file": "assets/captions/cap_003_02.png"
+   "text": "مسبح!",
+   "file": "assets/captions/w_011.png"
   },
   {
    "start": 4.53,
    "end": 4.727,
-   "file": "assets/captions/cap_004_00.png"
+   "text": "بس",
+   "file": "assets/captions/w_012.png"
   },
   {
    "start": 4.727,
    "end": 5.037,
-   "file": "assets/captions/cap_004_01.png"
+   "text": "ثاني",
+   "file": "assets/captions/w_013.png"
   },
   {
    "start": 5.037,
    "end": 5.5,
-   "file": "assets/captions/cap_004_02.png"
+   "text": "يوم،",
+   "file": "assets/captions/w_014.png"
   },
   {
    "start": 5.5,
    "end": 5.838,
-   "file": "assets/captions/cap_005_00.png"
+   "text": "الموية",
+   "file": "assets/captions/w_015.png"
   },
   {
    "start": 5.838,
    "end": 6.13,
-   "file": "assets/captions/cap_005_01.png"
+   "text": "تتسرب",
+   "file": "assets/captions/w_016.png"
   },
   {
    "start": 6.13,
    "end": 6.288,
-   "file": "assets/captions/cap_005_02.png"
+   "text": "في",
+   "file": "assets/captions/w_017.png"
   },
   {
    "start": 6.288,
    "end": 6.83,
-   "file": "assets/captions/cap_005_03.png"
+   "text": "الأرض،",
+   "file": "assets/captions/w_018.png"
   },
   {
    "start": 6.83,
    "end": 7.365,
-   "file": "assets/captions/cap_006_00.png"
+   "text": "والجدران",
+   "file": "assets/captions/w_019.png"
   },
   {
    "start": 7.365,
    "end": 7.844,
-   "file": "assets/captions/cap_006_01.png"
+   "text": "الطينية",
+   "file": "assets/captions/w_020.png"
   },
   {
    "start": 7.844,
    "end": 8.154,
-   "file": "assets/captions/cap_006_02.png"
+   "text": "تبدأ",
+   "file": "assets/captions/w_021.png"
   },
   {
    "start": 8.154,
    "end": 8.78,
-   "file": "assets/captions/cap_006_03.png"
+   "text": "تنهار.",
+   "file": "assets/captions/w_022.png"
   },
   {
    "start": 8.78,
    "end": 9.082,
-   "file": "assets/captions/cap_007_00.png"
+   "text": "عشان",
+   "file": "assets/captions/w_023.png"
   },
   {
    "start": 9.082,
    "end": 9.56,
-   "file": "assets/captions/cap_007_01.png"
+   "text": "كذا،",
+   "file": "assets/captions/w_024.png"
   },
   {
    "start": 9.56,
    "end": 9.909,
-   "file": "assets/captions/cap_008_00.png"
+   "text": "تركّب",
+   "file": "assets/captions/w_025.png"
   },
   {
    "start": 9.909,
    "end": 10.259,
-   "file": "assets/captions/cap_008_01.png"
+   "text": "شبكة",
+   "file": "assets/captions/w_026.png"
   },
   {
    "start": 10.259,
    "end": 10.608,
-   "file": "assets/captions/cap_008_02.png"
+   "text": "حديد",
+   "file": "assets/captions/w_027.png"
   },
   {
    "start": 10.608,
    "end": 10.958,
-   "file": "assets/captions/cap_008_03.png"
+   "text": "وترشّ",
+   "file": "assets/captions/w_028.png"
   },
   {
    "start": 10.958,
    "end": 11.371,
-   "file": "assets/captions/cap_008_04.png"
+   "text": "عليها",
+   "file": "assets/captions/w_029.png"
   },
   {
    "start": 11.371,
    "end": 11.721,
-   "file": "assets/captions/cap_009_00.png"
+   "text": "طبقة",
+   "file": "assets/captions/w_030.png"
   },
   {
    "start": 11.721,
    "end": 12.134,
-   "file": "assets/captions/cap_009_01.png"
+   "text": "سميكة",
+   "file": "assets/captions/w_031.png"
   },
   {
    "start": 12.134,
    "end": 12.356,
-   "file": "assets/captions/cap_009_02.png"
+   "text": "من",
+   "file": "assets/captions/w_032.png"
   },
   {
    "start": 12.356,
    "end": 13.2,
-   "file": "assets/captions/cap_009_03.png"
+   "text": "الخرسانة.",
+   "file": "assets/captions/w_033.png"
   },
   {
    "start": 13.2,
    "end": 13.458,
-   "file": "assets/captions/cap_010_00.png"
+   "text": "كذا",
+   "file": "assets/captions/w_034.png"
   },
   {
    "start": 13.458,
    "end": 13.716,
-   "file": "assets/captions/cap_010_01.png"
+   "text": "صار",
+   "file": "assets/captions/w_035.png"
   },
   {
    "start": 13.716,
    "end": 14.145,
-   "file": "assets/captions/cap_010_02.png"
+   "text": "المسبح",
+   "file": "assets/captions/w_036.png"
   },
   {
    "start": 14.145,
    "end": 14.46,
-   "file": "assets/captions/cap_010_03.png"
+   "text": "يمسك",
+   "file": "assets/captions/w_037.png"
   },
   {
    "start": 14.46,
    "end": 15.21,
-   "file": "assets/captions/cap_010_04.png"
+   "text": "الموية.",
+   "file": "assets/captions/w_038.png"
   },
   {
    "start": 15.21,
    "end": 15.488,
-   "file": "assets/captions/cap_011_00.png"
+   "text": "لكن",
+   "file": "assets/captions/w_039.png"
   },
   {
    "start": 15.488,
    "end": 15.766,
-   "file": "assets/captions/cap_011_01.png"
+   "text": "إذا",
+   "file": "assets/captions/w_040.png"
   },
   {
    "start": 15.766,
    "end": 16.168,
-   "file": "assets/captions/cap_011_02.png"
+   "text": "فضّيته",
+   "file": "assets/captions/w_041.png"
   },
   {
    "start": 16.168,
    "end": 16.508,
-   "file": "assets/captions/cap_011_03.png"
+   "text": "عشان",
+   "file": "assets/captions/w_042.png"
   },
   {
    "start": 16.508,
    "end": 17.16,
-   "file": "assets/captions/cap_011_04.png"
+   "text": "تنظفه،",
+   "file": "assets/captions/w_043.png"
   },
   {
    "start": 17.16,
    "end": 17.565,
-   "file": "assets/captions/cap_012_00.png"
+   "text": "الموية",
+   "file": "assets/captions/w_044.png"
   },
   {
    "start": 17.565,
    "end": 18.023,
-   "file": "assets/captions/cap_012_01.png"
+   "text": "الجوفية",
+   "file": "assets/captions/w_045.png"
   },
   {
    "start": 18.023,
    "end": 18.57,
-   "file": "assets/captions/cap_012_02.png"
+   "text": "اللي",
+   "file": "assets/captions/w_046.png"
   },
   {
    "start": 18.57,
    "end": 18.731,
-   "file": "assets/captions/cap_013_00.png"
+   "text": "تحت",
+   "file": "assets/captions/w_047.png"
   },
   {
    "start": 18.731,
    "end": 18.963,
-   "file": "assets/captions/cap_013_01.png"
+   "text": "تدفعه",
+   "file": "assets/captions/w_048.png"
   },
   {
    "start": 18.963,
    "end": 19.49,
-   "file": "assets/captions/cap_013_02.png"
+   "text": "لفوق،",
+   "file": "assets/captions/w_049.png"
   },
   {
    "start": 19.49,
    "end": 19.874,
-   "file": "assets/captions/cap_014_00.png"
+   "text": "وممكن",
+   "file": "assets/captions/w_050.png"
   },
   {
    "start": 19.874,
    "end": 20.2,
-   "file": "assets/captions/cap_014_01.png"
+   "text": "تطلّع",
+   "file": "assets/captions/w_051.png"
   },
   {
    "start": 20.2,
    "end": 20.643,
-   "file": "assets/captions/cap_014_02.png"
+   "text": "المسبح",
+   "file": "assets/captions/w_052.png"
   },
   {
    "start": 20.643,
    "end": 20.968,
-   "file": "assets/captions/cap_015_00.png"
+   "text": "كامل",
+   "file": "assets/captions/w_053.png"
   },
   {
    "start": 20.968,
    "end": 21.175,
-   "file": "assets/captions/cap_015_01.png"
+   "text": "من",
+   "file": "assets/captions/w_054.png"
   },
   {
    "start": 21.175,
    "end": 21.78,
-   "file": "assets/captions/cap_015_02.png"
+   "text": "الأرض،",
+   "file": "assets/captions/w_055.png"
   },
   {
    "start": 21.78,
    "end": 22.085,
-   "file": "assets/captions/cap_016_00.png"
+   "text": "كأنه",
+   "file": "assets/captions/w_056.png"
   },
   {
    "start": 22.085,
    "end": 22.65,
-   "file": "assets/captions/cap_016_01.png"
+   "text": "قارب!",
+   "file": "assets/captions/w_057.png"
   },
   {
    "start": 22.65,
    "end": 23.26,
-   "file": "assets/captions/cap_017_00.png"
+   "text": "الحل؟",
+   "file": "assets/captions/w_058.png"
   },
   {
    "start": 23.26,
    "end": 23.549,
-   "file": "assets/captions/cap_018_00.png"
+   "text": "تركّب",
+   "file": "assets/captions/w_059.png"
   },
   {
    "start": 23.549,
    "end": 23.839,
-   "file": "assets/captions/cap_018_01.png"
+   "text": "صمام",
+   "file": "assets/captions/w_060.png"
   },
   {
    "start": 23.839,
    "end": 24.128,
-   "file": "assets/captions/cap_018_02.png"
+   "text": "صغير",
+   "file": "assets/captions/w_061.png"
   },
   {
    "start": 24.128,
    "end": 24.313,
-   "file": "assets/captions/cap_018_03.png"
+   "text": "في",
+   "file": "assets/captions/w_062.png"
   },
   {
    "start": 24.313,
    "end": 25.1,
-   "file": "assets/captions/cap_018_04.png"
+   "text": "الأرضية.",
+   "file": "assets/captions/w_063.png"
   },
   {
    "start": 25.1,
    "end": 25.326,
-   "file": "assets/captions/cap_019_00.png"
+   "text": "إذا",
+   "file": "assets/captions/w_064.png"
   },
   {
    "start": 25.326,
    "end": 25.552,
-   "file": "assets/captions/cap_019_01.png"
+   "text": "زاد",
+   "file": "assets/captions/w_065.png"
   },
   {
    "start": 25.552,
    "end": 25.777,
-   "file": "assets/captions/cap_019_02.png"
+   "text": "ضغط",
+   "file": "assets/captions/w_066.png"
   },
   {
    "start": 25.777,
    "end": 26.154,
-   "file": "assets/captions/cap_019_03.png"
+   "text": "الموية",
+   "file": "assets/captions/w_067.png"
   },
   {
    "start": 26.154,
    "end": 26.78,
-   "file": "assets/captions/cap_019_04.png"
+   "text": "الجوفية،",
+   "file": "assets/captions/w_068.png"
   },
   {
    "start": 26.78,
    "end": 27.1,
-   "file": "assets/captions/cap_020_00.png"
+   "text": "يفتح",
+   "file": "assets/captions/w_069.png"
   },
   {
    "start": 27.1,
    "end": 27.478,
-   "file": "assets/captions/cap_020_01.png"
+   "text": "ويسمح",
+   "file": "assets/captions/w_070.png"
   },
   {
    "start": 27.478,
    "end": 27.74,
-   "file": "assets/captions/cap_020_02.png"
+   "text": "لها",
+   "file": "assets/captions/w_071.png"
   },
   {
    "start": 27.74,
    "end": 28.39,
-   "file": "assets/captions/cap_020_03.png"
+   "text": "تدخل،",
+   "file": "assets/captions/w_072.png"
   },
   {
    "start": 28.39,
    "end": 28.742,
-   "file": "assets/captions/cap_021_00.png"
+   "text": "وبكذا",
+   "file": "assets/captions/w_073.png"
   },
   {
    "start": 28.742,
    "end": 29.039,
-   "file": "assets/captions/cap_021_01.png"
+   "text": "يمنع",
+   "file": "assets/captions/w_074.png"
   },
   {
    "start": 29.039,
    "end": 29.445,
-   "file": "assets/captions/cap_021_02.png"
+   "text": "المسبح",
+   "file": "assets/captions/w_075.png"
   },
   {
    "start": 29.445,
    "end": 29.634,
-   "file": "assets/captions/cap_022_00.png"
+   "text": "من",
+   "file": "assets/captions/w_076.png"
   },
   {
    "start": 29.634,
    "end": 29.878,
-   "file": "assets/captions/cap_022_01.png"
+   "text": "إنه",
+   "file": "assets/captions/w_077.png"
   },
   {
    "start": 29.878,
    "end": 30.58,
-   "file": "assets/captions/cap_022_02.png"
+   "text": "يرتفع.",
+   "file": "assets/captions/w_078.png"
   },
   {
    "start": 30.58,
    "end": 30.851,
-   "file": "assets/captions/cap_023_00.png"
+   "text": "هذا",
+   "file": "assets/captions/w_079.png"
   },
   {
    "start": 30.851,
    "end": 31.303,
-   "file": "assets/captions/cap_023_01.png"
+   "text": "يسمونه",
+   "file": "assets/captions/w_080.png"
   },
   {
    "start": 31.303,
    "end": 31.634,
-   "file": "assets/captions/cap_023_02.png"
+   "text": "صمام",
+   "file": "assets/captions/w_081.png"
   },
   {
    "start": 31.634,
    "end": 32.026,
-   "file": "assets/captions/cap_023_03.png"
+   "text": "الضغط",
+   "file": "assets/captions/w_082.png"
   },
   {
    "start": 32.026,
    "end": 33.33,
-   "file": "assets/captions/cap_023_04.png"
+   "text": "الهيدروستاتيكي.",
+   "file": "assets/captions/w_083.png"
   },
   {
    "start": 33.33,
    "end": 33.595,
-   "file": "assets/captions/cap_024_00.png"
+   "text": "لكن",
+   "file": "assets/captions/w_084.png"
   },
   {
    "start": 33.595,
    "end": 33.86,
-   "file": "assets/captions/cap_024_01.png"
+   "text": "بعد",
+   "file": "assets/captions/w_085.png"
   },
   {
    "start": 33.86,
    "end": 34.242,
-   "file": "assets/captions/cap_024_02.png"
+   "text": "أسبوع",
+   "file": "assets/captions/w_086.png"
   },
   {
    "start": 34.242,
    "end": 34.507,
-   "file": "assets/captions/cap_024_03.png"
+   "text": "تحت",
+   "file": "assets/captions/w_087.png"
   },
   {
    "start": 34.507,
    "end": 35.09,
-   "file": "assets/captions/cap_024_04.png"
+   "text": "الشمس،",
+   "file": "assets/captions/w_088.png"
   },
   {
    "start": 35.09,
    "end": 35.415,
-   "file": "assets/captions/cap_025_00.png"
+   "text": "الموية",
+   "file": "assets/captions/w_089.png"
   },
   {
    "start": 35.415,
    "end": 35.783,
-   "file": "assets/captions/cap_025_01.png"
+   "text": "الراكدة",
+   "file": "assets/captions/w_090.png"
   },
   {
    "start": 35.783,
    "end": 36.022,
-   "file": "assets/captions/cap_025_02.png"
+   "text": "تصير",
+   "file": "assets/captions/w_091.png"
   },
   {
    "start": 36.022,
    "end": 36.53,
-   "file": "assets/captions/cap_025_03.png"
+   "text": "خضرا،",
+   "file": "assets/captions/w_092.png"
   },
   {
    "start": 36.53,
    "end": 36.91,
-   "file": "assets/captions/cap_026_00.png"
+   "text": "وهنا",
+   "file": "assets/captions/w_093.png"
   },
   {
    "start": 36.91,
    "end": 37.36,
-   "file": "assets/captions/cap_026_01.png"
+   "text": "تحتاج",
+   "file": "assets/captions/w_094.png"
   },
   {
    "start": 37.36,
    "end": 38.07,
-   "file": "assets/captions/cap_026_02.png"
+   "text": "مضخة.",
+   "file": "assets/captions/w_095.png"
   },
   {
    "start": 38.07,
    "end": 38.358,
-   "file": "assets/captions/cap_027_00.png"
+   "text": "تسحب",
+   "file": "assets/captions/w_096.png"
   },
   {
    "start": 38.358,
    "end": 38.91,
-   "file": "assets/captions/cap_027_01.png"
+   "text": "الموية،",
+   "file": "assets/captions/w_097.png"
   },
   {
    "start": 38.91,
    "end": 39.472,
-   "file": "assets/captions/cap_028_00.png"
+   "text": "وتدفعها",
+   "file": "assets/captions/w_098.png"
   },
   {
    "start": 39.472,
    "end": 39.835,
-   "file": "assets/captions/cap_028_01.png"
+   "text": "داخل",
+   "file": "assets/captions/w_099.png"
   },
   {
    "start": 39.835,
    "end": 40.198,
-   "file": "assets/captions/cap_028_02.png"
+   "text": "خزان",
+   "file": "assets/captions/w_100.png"
   },
   {
    "start": 40.198,
    "end": 40.628,
-   "file": "assets/captions/cap_028_03.png"
+   "text": "مليان",
+   "file": "assets/captions/w_101.png"
   },
   {
    "start": 40.628,
    "end": 40.925,
-   "file": "assets/captions/cap_029_00.png"
+   "text": "رمل",
+   "file": "assets/captions/w_102.png"
   },
   {
    "start": 40.925,
    "end": 41.289,
-   "file": "assets/captions/cap_029_01.png"
+   "text": "يحجز",
+   "file": "assets/captions/w_103.png"
   },
   {
    "start": 41.289,
    "end": 42.16,
-   "file": "assets/captions/cap_029_02.png"
+   "text": "الأوساخ،",
+   "file": "assets/captions/w_104.png"
   },
   {
    "start": 42.16,
    "end": 42.452,
-   "file": "assets/captions/cap_030_00.png"
+   "text": "وترجع",
+   "file": "assets/captions/w_105.png"
   },
   {
    "start": 42.452,
    "end": 42.788,
-   "file": "assets/captions/cap_030_01.png"
+   "text": "الموية",
+   "file": "assets/captions/w_106.png"
   },
   {
    "start": 42.788,
    "end": 43.39,
-   "file": "assets/captions/cap_030_02.png"
+   "text": "نظيفة.",
+   "file": "assets/captions/w_107.png"
   },
   {
    "start": 43.39,
    "end": 43.748,
-   "file": "assets/captions/cap_031_00.png"
+   "text": "وهذا",
+   "file": "assets/captions/w_108.png"
   },
   {
    "start": 43.748,
    "end": 44.107,
-   "file": "assets/captions/cap_031_01.png"
+   "text": "فلتر",
+   "file": "assets/captions/w_109.png"
   },
   {
    "start": 44.107,
    "end": 44.85,
-   "file": "assets/captions/cap_031_02.png"
+   "text": "الرمل.",
+   "file": "assets/captions/w_110.png"
   },
   {
    "start": 44.85,
    "end": 45.078,
-   "file": "assets/captions/cap_032_00.png"
+   "text": "بس",
+   "file": "assets/captions/w_111.png"
   },
   {
    "start": 45.078,
    "end": 45.632,
-   "file": "assets/captions/cap_032_01.png"
+   "text": "الأوراق",
+   "file": "assets/captions/w_112.png"
   },
   {
    "start": 45.632,
    "end": 46.22,
-   "file": "assets/captions/cap_032_02.png"
+   "text": "تطفو،",
+   "file": "assets/captions/w_113.png"
   },
   {
    "start": 46.22,
    "end": 46.746,
-   "file": "assets/captions/cap_033_00.png"
+   "text": "والأوساخ",
+   "file": "assets/captions/w_114.png"
   },
   {
    "start": 46.746,
    "end": 47.216,
-   "file": "assets/captions/cap_033_01.png"
+   "text": "الثقيلة",
+   "file": "assets/captions/w_115.png"
   },
   {
    "start": 47.216,
    "end": 47.52,
-   "file": "assets/captions/cap_033_02.png"
+   "text": "تنزل",
+   "file": "assets/captions/w_116.png"
   },
   {
    "start": 47.52,
    "end": 48.14,
-   "file": "assets/captions/cap_033_03.png"
+   "text": "للقاع.",
+   "file": "assets/captions/w_117.png"
   },
   {
    "start": 48.14,
    "end": 48.442,
-   "file": "assets/captions/cap_034_00.png"
+   "text": "عشان",
+   "file": "assets/captions/w_118.png"
   },
   {
    "start": 48.442,
    "end": 48.92,
-   "file": "assets/captions/cap_034_01.png"
+   "text": "كذا،",
+   "file": "assets/captions/w_119.png"
   },
   {
    "start": 48.92,
    "end": 49.208,
-   "file": "assets/captions/cap_035_00.png"
+   "text": "تركّب",
+   "file": "assets/captions/w_120.png"
   },
   {
    "start": 49.208,
    "end": 49.495,
-   "file": "assets/captions/cap_035_01.png"
+   "text": "فتحة",
+   "file": "assets/captions/w_121.png"
   },
   {
    "start": 49.495,
    "end": 49.731,
-   "file": "assets/captions/cap_035_02.png"
+   "text": "عند",
+   "file": "assets/captions/w_122.png"
   },
   {
    "start": 49.731,
    "end": 49.966,
-   "file": "assets/captions/cap_035_03.png"
+   "text": "سطح",
+   "file": "assets/captions/w_123.png"
   },
   {
    "start": 49.966,
    "end": 50.358,
-   "file": "assets/captions/cap_036_00.png"
+   "text": "الموية",
+   "file": "assets/captions/w_124.png"
   },
   {
    "start": 50.358,
    "end": 50.646,
-   "file": "assets/captions/cap_036_01.png"
+   "text": "تسحب",
+   "file": "assets/captions/w_125.png"
   },
   {
    "start": 50.646,
    "end": 51.4,
-   "file": "assets/captions/cap_036_02.png"
+   "text": "الأوراق،",
+   "file": "assets/captions/w_126.png"
   },
   {
    "start": 51.4,
    "end": 51.803,
-   "file": "assets/captions/cap_037_00.png"
+   "text": "اسمها",
+   "file": "assets/captions/w_127.png"
   },
   {
    "start": 51.803,
    "end": 52.69,
-   "file": "assets/captions/cap_037_01.png"
+   "text": "السكيمر،",
+   "file": "assets/captions/w_128.png"
   },
   {
    "start": 52.69,
    "end": 53.021,
-   "file": "assets/captions/cap_038_00.png"
+   "text": "وفتحة",
+   "file": "assets/captions/w_129.png"
   },
   {
    "start": 53.021,
    "end": 53.352,
-   "file": "assets/captions/cap_038_01.png"
+   "text": "ثانية",
+   "file": "assets/captions/w_130.png"
   },
   {
    "start": 53.352,
    "end": 53.53,
-   "file": "assets/captions/cap_038_02.png"
+   "text": "في",
+   "file": "assets/captions/w_131.png"
   },
   {
    "start": 53.53,
    "end": 53.81,
-   "file": "assets/captions/cap_038_03.png"
+   "text": "أعمق",
+   "file": "assets/captions/w_132.png"
   },
   {
    "start": 53.81,
    "end": 54.22,
-   "file": "assets/captions/cap_038_04.png"
+   "text": "نقطة",
+   "file": "assets/captions/w_133.png"
   },
   {
    "start": 54.22,
    "end": 54.523,
-   "file": "assets/captions/cap_039_00.png"
+   "text": "تسحب",
+   "file": "assets/captions/w_134.png"
   },
   {
    "start": 54.523,
    "end": 54.99,
-   "file": "assets/captions/cap_039_01.png"
+   "text": "الأوساخ",
+   "file": "assets/captions/w_135.png"
   },
   {
    "start": 54.99,
    "end": 55.293,
-   "file": "assets/captions/cap_039_02.png"
+   "text": "اللي",
+   "file": "assets/captions/w_136.png"
   },
   {
    "start": 55.293,
    "end": 55.88,
-   "file": "assets/captions/cap_039_03.png"
+   "text": "تحت.",
+   "file": "assets/captions/w_137.png"
   },
   {
    "start": 55.88,
    "end": 56.312,
-   "file": "assets/captions/cap_040_00.png"
+   "text": "وبعدين",
+   "file": "assets/captions/w_138.png"
   },
   {
    "start": 56.312,
    "end": 56.628,
-   "file": "assets/captions/cap_040_01.png"
+   "text": "توجّه",
+   "file": "assets/captions/w_139.png"
   },
   {
    "start": 56.628,
    "end": 57.06,
-   "file": "assets/captions/cap_040_02.png"
+   "text": "الموية",
+   "file": "assets/captions/w_140.png"
   },
   {
    "start": 57.06,
    "end": 57.549,
-   "file": "assets/captions/cap_041_00.png"
+   "text": "النظيفة",
+   "file": "assets/captions/w_141.png"
   },
   {
    "start": 57.549,
    "end": 57.866,
-   "file": "assets/captions/cap_041_01.png"
+   "text": "بشكل",
+   "file": "assets/captions/w_142.png"
   },
   {
    "start": 57.866,
    "end": 58.58,
-   "file": "assets/captions/cap_041_02.png"
+   "text": "جانبي،",
+   "file": "assets/captions/w_143.png"
   },
   {
    "start": 58.58,
    "end": 58.887,
-   "file": "assets/captions/cap_042_00.png"
+   "text": "عشان",
+   "file": "assets/captions/w_144.png"
   },
   {
    "start": 58.887,
    "end": 59.194,
-   "file": "assets/captions/cap_042_01.png"
+   "text": "تدور",
+   "file": "assets/captions/w_145.png"
   },
   {
    "start": 59.194,
    "end": 59.501,
-   "file": "assets/captions/cap_042_02.png"
+   "text": "داخل",
+   "file": "assets/captions/w_146.png"
   },
   {
    "start": 59.501,
    "end": 60.1,
-   "file": "assets/captions/cap_042_03.png"
+   "text": "المسبح",
+   "file": "assets/captions/w_147.png"
   },
   {
    "start": 60.1,
    "end": 60.427,
-   "file": "assets/captions/cap_043_00.png"
+   "text": "وتدفع",
+   "file": "assets/captions/w_148.png"
   },
   {
    "start": 60.427,
    "end": 60.855,
-   "file": "assets/captions/cap_043_01.png"
+   "text": "الأوساخ",
+   "file": "assets/captions/w_149.png"
   },
   {
    "start": 60.855,
    "end": 61.232,
-   "file": "assets/captions/cap_043_02.png"
+   "text": "باتجاه",
+   "file": "assets/captions/w_150.png"
   },
   {
    "start": 61.232,
    "end": 62.07,
-   "file": "assets/captions/cap_043_03.png"
+   "text": "السكيمر.",
+   "file": "assets/captions/w_151.png"
   },
   {
    "start": 62.07,
    "end": 62.316,
-   "file": "assets/captions/cap_044_00.png"
+   "text": "لكن",
+   "file": "assets/captions/w_152.png"
   },
   {
    "start": 62.316,
    "end": 62.891,
-   "file": "assets/captions/cap_044_01.png"
+   "text": "البكتيريا",
+   "file": "assets/captions/w_153.png"
   },
   {
    "start": 62.891,
    "end": 63.192,
-   "file": "assets/captions/cap_044_02.png"
+   "text": "أصغر",
+   "file": "assets/captions/w_154.png"
   },
   {
    "start": 63.192,
    "end": 63.383,
-   "file": "assets/captions/cap_044_03.png"
+   "text": "من",
+   "file": "assets/captions/w_155.png"
   },
   {
    "start": 63.383,
    "end": 63.574,
-   "file": "assets/captions/cap_045_00.png"
+   "text": "إن",
+   "file": "assets/captions/w_156.png"
   },
   {
    "start": 63.574,
    "end": 63.93,
-   "file": "assets/captions/cap_045_01.png"
+   "text": "الرمل",
+   "file": "assets/captions/w_157.png"
   },
   {
    "start": 63.93,
    "end": 64.6,
-   "file": "assets/captions/cap_045_02.png"
+   "text": "يمسكها،",
+   "file": "assets/captions/w_158.png"
   },
   {
    "start": 64.6,
    "end": 64.901,
-   "file": "assets/captions/cap_046_00.png"
+   "text": "فهنا",
+   "file": "assets/captions/w_159.png"
   },
   {
    "start": 64.901,
    "end": 65.202,
-   "file": "assets/captions/cap_046_01.png"
+   "text": "تضيف",
+   "file": "assets/captions/w_160.png"
   },
   {
    "start": 65.202,
    "end": 65.612,
-   "file": "assets/captions/cap_046_02.png"
+   "text": "الكلور",
+   "file": "assets/captions/w_161.png"
   },
   {
    "start": 65.612,
    "end": 65.913,
-   "file": "assets/captions/cap_047_00.png"
+   "text": "عشان",
+   "file": "assets/captions/w_162.png"
   },
   {
    "start": 65.913,
    "end": 66.214,
-   "file": "assets/captions/cap_047_01.png"
+   "text": "يقضي",
+   "file": "assets/captions/w_163.png"
   },
   {
    "start": 66.214,
    "end": 66.83,
-   "file": "assets/captions/cap_047_02.png"
+   "text": "عليها.",
+   "file": "assets/captions/w_164.png"
   },
   {
    "start": 66.83,
    "end": 67.192,
-   "file": "assets/captions/cap_048_00.png"
+   "text": "والريحة",
+   "file": "assets/captions/w_165.png"
   },
   {
    "start": 67.192,
    "end": 67.511,
-   "file": "assets/captions/cap_048_01.png"
+   "text": "القوية",
+   "file": "assets/captions/w_166.png"
   },
   {
    "start": 67.511,
    "end": 67.745,
-   "file": "assets/captions/cap_048_02.png"
+   "text": "اللي",
+   "file": "assets/captions/w_167.png"
   },
   {
    "start": 67.745,
    "end": 68.022,
-   "file": "assets/captions/cap_049_00.png"
+   "text": "تشمّها",
+   "file": "assets/captions/w_168.png"
   },
   {
    "start": 68.022,
    "end": 68.171,
-   "file": "assets/captions/cap_049_01.png"
+   "text": "في",
+   "file": "assets/captions/w_169.png"
   },
   {
    "start": 68.171,
    "end": 68.72,
-   "file": "assets/captions/cap_049_02.png"
+   "text": "المسبح؟",
+   "file": "assets/captions/w_170.png"
   },
   {
    "start": 68.72,
    "end": 68.872,
-   "file": "assets/captions/cap_050_00.png"
+   "text": "مو",
+   "file": "assets/captions/w_171.png"
   },
   {
    "start": 68.872,
    "end": 69.284,
-   "file": "assets/captions/cap_050_01.png"
+   "text": "بالضرورة",
+   "file": "assets/captions/w_172.png"
   },
   {
    "start": 69.284,
    "end": 69.436,
-   "file": "assets/captions/cap_050_02.png"
+   "text": "من",
+   "file": "assets/captions/w_173.png"
   },
   {
    "start": 69.436,
    "end": 69.761,
-   "file": "assets/captions/cap_050_03.png"
+   "text": "الكلور",
+   "file": "assets/captions/w_174.png"
   },
   {
    "start": 69.761,
    "end": 70.27,
-   "file": "assets/captions/cap_050_04.png"
+   "text": "نفسه،",
+   "file": "assets/captions/w_175.png"
   },
   {
    "start": 70.27,
    "end": 70.62,
-   "file": "assets/captions/cap_051_00.png"
+   "text": "غالبًا",
+   "file": "assets/captions/w_176.png"
   },
   {
    "start": 70.62,
    "end": 70.809,
-   "file": "assets/captions/cap_051_01.png"
+   "text": "من",
+   "file": "assets/captions/w_177.png"
   },
   {
    "start": 70.809,
    "end": 71.213,
-   "file": "assets/captions/cap_051_02.png"
+   "text": "تفاعله",
+   "file": "assets/captions/w_178.png"
   },
   {
    "start": 71.213,
    "end": 71.402,
-   "file": "assets/captions/cap_051_03.png"
+   "text": "مع",
+   "file": "assets/captions/w_179.png"
   },
   {
    "start": 71.402,
    "end": 71.753,
-   "file": "assets/captions/cap_052_00.png"
+   "text": "العرق",
+   "file": "assets/captions/w_180.png"
   },
   {
    "start": 71.753,
    "end": 72.157,
-   "file": "assets/captions/cap_052_01.png"
+   "text": "وبقايا",
+   "file": "assets/captions/w_181.png"
   },
   {
    "start": 72.157,
    "end": 72.562,
-   "file": "assets/captions/cap_052_02.png"
+   "text": "المواد",
+   "file": "assets/captions/w_182.png"
   },
   {
    "start": 72.562,
    "end": 73.33,
-   "file": "assets/captions/cap_052_03.png"
+   "text": "العضوية.",
+   "file": "assets/captions/w_183.png"
   },
   {
    "start": 73.33,
    "end": 73.722,
-   "file": "assets/captions/cap_053_00.png"
+   "text": "باقي",
+   "file": "assets/captions/w_184.png"
   },
   {
    "start": 73.722,
    "end": 74.115,
-   "file": "assets/captions/cap_053_01.png"
+   "text": "تركّب",
+   "file": "assets/captions/w_185.png"
   },
   {
    "start": 74.115,
    "end": 74.81,
-   "file": "assets/captions/cap_053_02.png"
+   "text": "البلاط،",
+   "file": "assets/captions/w_186.png"
   },
   {
    "start": 74.81,
    "end": 75.287,
-   "file": "assets/captions/cap_054_00.png"
+   "text": "والدرج،",
+   "file": "assets/captions/w_187.png"
   },
   {
    "start": 75.287,
    "end": 75.637,
-   "file": "assets/captions/cap_055_00.png"
+   "text": "ولوح",
+   "file": "assets/captions/w_188.png"
   },
   {
    "start": 75.637,
    "end": 76.33,
-   "file": "assets/captions/cap_055_01.png"
+   "text": "القفز...",
+   "file": "assets/captions/w_189.png"
   },
   {
    "start": 76.33,
    "end": 76.722,
-   "file": "assets/captions/cap_056_00.png"
+   "text": "ومبروك",
+   "file": "assets/captions/w_190.png"
   },
   {
    "start": 76.722,
    "end": 77.3,
-   "file": "assets/captions/cap_056_01.png"
+   "text": "عليك!",
+   "file": "assets/captions/w_191.png"
   },
   {
    "start": 77.3,
    "end": 77.648,
-   "file": "assets/captions/cap_057_00.png"
+   "text": "بنيت",
+   "file": "assets/captions/w_192.png"
   },
   {
    "start": 77.648,
    "end": 78.059,
-   "file": "assets/captions/cap_057_01.png"
+   "text": "مسبحك",
+   "file": "assets/captions/w_193.png"
   },
   {
    "start": 78.059,
-   "end": 78.62,
-   "file": "assets/captions/cap_057_02.png"
+   "end": 78.72,
+   "text": "بنفسك.",
+   "file": "assets/captions/w_194.png"
   }
  ]
 }

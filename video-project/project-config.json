@@ -9,68 +9,33 @@
   "background_music": false,
   "quality": {
     "full": {
-      "resolution": [
-        1080,
-        1920
-      ],
-      "engine": "EEVEE",
-      "samples": 64,
-      "crf": 17
-    },
-    "cinematic": {
-      "resolution": [
-        1080,
-        1920
-      ],
-      "engine": "CYCLES",
-      "samples": 128,
-      "denoise": true,
+      "scale": 1.0,
       "crf": 16
     },
-    "medium": {
-      "resolution": [
-        1080,
-        1920
-      ],
-      "engine": "EEVEE",
-      "samples": 24,
-      "crf": 19
-    },
     "preview": {
-      "resolution": [
-        540,
-        960
-      ],
-      "engine": "EEVEE",
-      "samples": 8,
-      "crf": 23,
-      "frame_step": 2
+      "scale": 0.5,
+      "crf": 23
     }
   },
   "captions": {
-    "font_size": 74,
-    "bottom_margin_ratio": 0.2,
-    "max_width_ratio": 0.84,
+    "font_size": 118,
+    "stroke_width": 11,
     "text_color": [
       255,
       255,
       255
     ],
-    "highlight_color": [
-      255,
-      214,
-      64
+    "stroke_color": [
+      22,
+      28,
+      38
     ],
-    "box_color": [
-      10,
-      30,
-      45,
-      170
-    ]
+    "center_y_ratio": 0.27
   },
   "audio": {
     "voice_gain_db": 0.0,
     "sfx_gain_db": -9.0,
     "loudness_target_lufs": -14.0
-  }
+  },
+  "chunk_frames": 120
 }
